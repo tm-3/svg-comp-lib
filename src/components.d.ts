@@ -48,38 +48,40 @@ export namespace Components {
   interface SvgComponentGroupAttributes extends StencilHTMLAttributes {}
 
   interface SvgToggle {
+    'label': string;
     /**
     * Defaults to true
     */
     'preserveAspectRatios': string;
     /**
-    * Describes the shape of the container of the toggle.
+    * URL to alternate definition
     */
-    'toggleContainerDefinition': string;
+    'toggleContainerUrl': string;
     /**
     * Describes the
     */
-    'toggleIndicatorDefinition': string;
-    'toggleType': 'check' | 'switch';
+    'toggleIndicatorUrl': string;
+    'toggleOrientation': 'horizontal' | 'vertical';
     /**
     * The viewbox of the SVG
     */
     'viewBox': string;
   }
   interface SvgToggleAttributes extends StencilHTMLAttributes {
+    'label'?: string;
     /**
     * Defaults to true
     */
     'preserveAspectRatios'?: string;
     /**
-    * Describes the shape of the container of the toggle.
+    * URL to alternate definition
     */
-    'toggleContainerDefinition'?: string;
+    'toggleContainerUrl'?: string;
     /**
     * Describes the
     */
-    'toggleIndicatorDefinition'?: string;
-    'toggleType'?: 'check' | 'switch';
+    'toggleIndicatorUrl'?: string;
+    'toggleOrientation'?: 'horizontal' | 'vertical';
     /**
     * The viewbox of the SVG
     */
