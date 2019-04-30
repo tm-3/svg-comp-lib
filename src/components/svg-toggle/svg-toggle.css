@@ -1,0 +1,32 @@
+:host {
+  /**
+  * @prop --svg-height: Height of the toggle control
+  * @prop --svg-width: Width of the toggle
+  * @prop --svg-toggle-indicator-color: Color of the svg indicator
+  * @prop --svg-toggle-container-color: Color of the svg container
+  */
+
+  --svg-height: '';
+  --svg-width: '';
+  --svg-toggle-indicator-color: red;
+  --svg-toggle-container-color: green;
+}
+
+.svg-toggle {
+  height: var(--svg-height, 100px);
+  /* width: var(--svg-width, 100%); */
+}
+
+.svg-toggle-indicator {
+  fill: var(--svg-toggle-indicator-color);
+
+  transition-duration: 0.3s;
+}
+
+.svg-toggle-container {
+  fill: var(--svg-toggle-container-color);
+}
+
+.selected-state {
+  transform: translate(100px);
+}

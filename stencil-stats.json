@@ -1,0 +1,168 @@
+{
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.16.2"
+  },
+  "app": {
+    "namespace": "svg",
+    "fsNamespace": "svg",
+    "components": 4,
+    "entries": 4,
+    "bundles": 4
+  },
+  "options": {
+    "minifyJs": false,
+    "minifyCss": false,
+    "hashFileNames": false,
+    "hashedFileNameLength": 8,
+    "buildEs5": false
+  },
+  "components": [
+    {
+      "tag": "my-component",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-button",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-component-group",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-toggle",
+      "dependencies": [],
+      "dependencyOf": []
+    }
+  ],
+  "entries": [
+    {
+      "entryId": "entry.my-component",
+      "components": [
+        {
+          "tag": "my-component",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "my-component.entry.js",
+          "outputs": [
+            "dist/svg/my-component.entry.js",
+            "www/build/svg/my-component.entry.js"
+          ],
+          "size": 883,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/my-component/my-component.js"
+      ],
+      "encapsulations": [
+        "shadow"
+      ]
+    },
+    {
+      "entryId": "entry.svg-button",
+      "components": [
+        {
+          "tag": "svg-button",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-button.entry.js",
+          "outputs": [
+            "dist/svg/svg-button.entry.js",
+            "www/build/svg/svg-button.entry.js"
+          ],
+          "size": 357,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-button/svg-button.js"
+      ],
+      "encapsulations": [
+        "shadow"
+      ]
+    },
+    {
+      "entryId": "entry.svg-component-group",
+      "components": [
+        {
+          "tag": "svg-component-group",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-component-group.entry.js",
+          "outputs": [
+            "dist/svg/svg-component-group.entry.js",
+            "www/build/svg/svg-component-group.entry.js"
+          ],
+          "size": 390,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-component-group/svg-component-group.js"
+      ],
+      "encapsulations": [
+        "shadow"
+      ]
+    },
+    {
+      "entryId": "entry.svg-toggle",
+      "components": [
+        {
+          "tag": "svg-toggle",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-toggle.entry.js",
+          "outputs": [
+            "dist/svg/svg-toggle.entry.js",
+            "www/build/svg/svg-toggle.entry.js"
+          ],
+          "size": 3765,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-toggle/svg-toggle.js"
+      ],
+      "encapsulations": [
+        "shadow"
+      ]
+    }
+  ],
+  "sourceGraph": {
+    "src/common/base.ts": [],
+    "src/components/my-component/my-component.e2e.ts": [],
+    "src/components/my-component/my-component.tsx": [
+      "src/utils/utils"
+    ],
+    "src/components/svg-button/svg-button.tsx": [],
+    "src/components/svg-component-group/svg-component-group.tsx": [],
+    "src/components/svg-toggle/svg-toggle.tsx": [],
+    "src/globals/app.ts": [],
+    "src/utils/utils.spec.ts": [
+      "src/utils/utils"
+    ],
+    "src/utils/utils.ts": []
+  },
+  "collections": []
+}

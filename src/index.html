@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>SVG Component Library</title>
+    <script src="/build/svg.js"></script>
+    <style>
+      .toggle {
+        --svg-height: 50px;
+        --svg-toggle-indicator-color: rgb(201, 141, 62);
+        --svg-toggle-container-color: blue;
+      }
+
+      .wrapper {
+        background-color: darkgrey;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 4fr 1fr;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        height: 95vh;
+        display: grid;
+      }
+
+      .web-console {
+        border: 1px solid #ccc;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <svg-toggle class="toggle" id="3"></svg-toggle>
+      <svg-toggle class="toggle" id="2"></svg-toggle>
+      <svg-toggle id="33"></svg-toggle>
+  </body>
+</html>
