@@ -19,7 +19,7 @@
   },
   "components": [
     {
-      "tag": "my-component",
+      "tag": "svg-app-container",
       "dependencies": [],
       "dependencyOf": []
     },
@@ -41,17 +41,28 @@
   ],
   "entries": [
     {
-      "entryId": "entry.my-component",
+      "entryId": "entry.svg-app-container",
       "components": [
         {
-          "tag": "my-component",
+          "tag": "svg-app-container",
           "dependencies": [],
           "dependencyOf": []
         }
       ],
+      "bundles": [
+        {
+          "fileName": "svg-app-container.entry.js",
+          "outputs": [
+            "dist/svg/svg-app-container.entry.js",
+            "www/build/svg/svg-app-container.entry.js"
+          ],
+          "size": 722,
+          "target": "es2017"
+        }
+      ],
       "bundles": [],
       "inputs": [
-        "src/components/my-component/my-component.js"
+        "src/components/svg-app-container/svg-app-container.js"
       ],
       "encapsulations": [
         "shadow"
@@ -100,7 +111,17 @@
           "dependencyOf": []
         }
       ],
-      "bundles": [],
+      "bundles": [
+        {
+          "fileName": "svg-toggle.entry.js",
+          "outputs": [
+            "dist/svg/svg-toggle.entry.js",
+            "www/build/svg/svg-toggle.entry.js"
+          ],
+          "size": 4733,
+          "target": "es2017"
+        }
+      ],
       "inputs": [
         "src/components/svg-toggle/svg-toggle.js"
       ],
@@ -109,12 +130,93 @@
       ]
     }
   ],
+  "rollupResults": {
+    "modules": [
+      {
+        "id": "entry.svg-toggle.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgToggle"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-toggle/svg-toggle.js",
+            "exports": [
+              "SvgToggle"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-toggle.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-component-group.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgComponentGroup"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-component-group/svg-component-group.js",
+            "exports": [
+              "SvgComponentGroup"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-component-group.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-button.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgButton"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-button/svg-button.js",
+            "exports": [
+              "SvgButton"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-button.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-app-container.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgAppContainer"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-app-container/svg-app-container.js",
+            "exports": [
+              "SvgAppContainer"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-app-container.js",
+            "exports": []
+          }
+        ]
+      }
+    ]
+  },
   "sourceGraph": {
     "src/common/base.ts": [],
-    "src/components/my-component/my-component.e2e.ts": [],
-    "src/components/my-component/my-component.tsx": [
-      "src/utils/utils"
-    ],
+    "src/components/svg-app-container/svg-app-container.tsx": [],
     "src/components/svg-button/svg-button.tsx": [],
     "src/components/svg-component-group/svg-component-group.tsx": [],
     "src/components/svg-toggle/svg-toggle.tsx": [],
