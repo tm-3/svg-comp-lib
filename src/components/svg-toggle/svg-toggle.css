@@ -4,23 +4,26 @@
   * @prop --svg-width: Width of the toggle
   * @prop --svg-toggle-indicator-color: Color of the svg indicator
   * @prop --svg-toggle-container-color: Color of the svg container
+  * @prop --svg-toggle-indicator-active-color: Color of the indicator when selecgted;
+  * @prop --svg-toggle-container-active-color: Color of the container when selected;
   */
 
-  --svg-height: '';
+  --svg-height: 25px;
   --svg-width: '';
-  --svg-toggle-indicator-color: red;
-  --svg-toggle-container-color: green;
+  --svg-toggle-indicator-color: rgb(209, 77, 77);
+  --svg-toggle-container-color: rgb(20, 27, 27);
+  --svg-toggle-indicator-active-color: red;
+  --svg-toggle-container-active-color: grey;
 }
 
 .svg-toggle {
-  height: var(--svg-height, 100px);
+  height: var(--svg-height, 50px);
   /* width: var(--svg-width, 100%); */
 }
 
 .svg-toggle-indicator {
-  fill: var(--svg-toggle-indicator-color);
-
-  transition-duration: 0.3s;
+  fill: var(--svg-toggle-indicator-color, red);
+  transition: all 0.3s ease;
 }
 
 .svg-toggle-container {

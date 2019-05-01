@@ -1,9 +1,9 @@
-import { Component, Element, Method, Prop, State } from '@stencil/core';
+import { Component, Element, Method, Prop, State, Watch } from '@stencil/core';
 
 @Component({
   tag: 'svg-toggle',
   styleUrl: 'svg-toggle.css',
-  shadow: true,
+  shadow: false,
 })
 export class SvgToggle {
   private svgRoot: SVGGraphicsElement;
@@ -12,37 +12,40 @@ export class SvgToggle {
 
   @Element() el: HTMLElement;
 
-  @State() state: {
-    isSelected: boolean;
-  };
+  @State() isSelected: boolean = false;
 
-  @Prop() toggleType: 'check' | 'switch' = 'switch';
+  @Prop() toggleOrientation: 'horizontal' | 'vertical' = 'horizontal';
+  @Prop() label: string;
 
   /**
    * Defaults to true
    */
   @Prop() preserveAspectRatios: string;
   /**
-   * Describes the shape of the container of the toggle.
+   * URL to alternate definition
    */
   @Prop()
-  toggleContainerDefinition: string = `<rect ry="50" rx="50" height="100" width="200" id="rect3868"/>`;
+  toggleContainerUrl: string;
   /**
    * Describes the
    */
   @Prop()
-  toggleIndicatorDefinition: string = `<circle r="45" cx="150" cy="50" id="path3870-2"   />`;
+  toggleIndicatorUrl: string;
 
   /**
    * The viewbox of the SVG
    */
   @Prop() viewBox: string = '0 0 200 100';
 
-  componentWillLoad() {
-    this.state = {
-      isSelected: false,
-    };
+  @Watch('isSelected') stateHandler() {
+    if (this.isSelected) {
+      this.toggleIndicator.classList.add('selected-state');
+    } else {
+      this.toggleIndicator.classList.remove('selected-state');
+    }
   }
+
+  componentWillLoad() {}
   componentDidLoad() {
     this.registerComponent();
     console.log(this.svgRoot.children.length);
@@ -57,12 +60,7 @@ export class SvgToggle {
     if (e) {
       console.log(e);
     }
-    this.state.isSelected = !this.state.isSelected;
-    if (this.state.isSelected) {
-      this.toggleIndicator.classList.add('selected-state');
-    } else {
-      this.toggleIndicator.classList.remove('selected-state');
-    }
+    this.isSelected = !this.isSelected;
   }
 
   hostData() {
@@ -83,21 +81,28 @@ export class SvgToggle {
         onClick={(event: UIEvent) => this.handleClick(event)}
         ref={(el) => (this.svgRoot = el as SVGGraphicsElement)}
       >
+        <defs>
+          <rect ry="50" rx="50" height="100" width="200" id="toggleContainer" />
+          <circle r="45" cx="50" cy="50" id="toggleIndicator" />
+          <filter id="white-glow" x="-5000%" y="-5000%" width="10000%" height="10000%">
+            <feFlood result="flood" flood-color="#ffffff" flood-opacity="1" />
+            <feComposite in="flood" result="mask" in2="SourceGraphic" operator="in" />
+            <feMorphology in="mask" result="dilated" operator="dilate" radius="2" />
+            <feGaussianBlur in="dilated" result="blurred" stdDeviation="5" />
+            <feMerge>
+              <feMergeNode in="blurred" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
         <g ref={(el) => (this.toggleGroup = el as SVGGraphicsElement)}>
-          <rect
-            ry="50"
-            rx="50"
-            height="100"
-            width="200"
-            id="rect3868"
+          <use
+            href={this.toggleContainerUrl ? this.toggleContainerUrl : '#toggleContainer'}
             class="svg-toggle-container"
           />
-          <circle
+          <use
             ref={(el) => (this.toggleIndicator = el as SVGGraphicsElement)}
-            r="45"
-            cx="50"
-            cy="50"
-            id="path3870-2"
+            href={this.toggleIndicatorUrl ? this.toggleIndicatorUrl : '#toggleIndicator'}
             class="svg-toggle-indicator"
           />
         </g>
