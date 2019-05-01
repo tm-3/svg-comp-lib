@@ -8,7 +8,7 @@
     "fsNamespace": "svg",
     "components": 4,
     "entries": 4,
-    "bundles": 4
+    "bundles": 0
   },
   "options": {
     "minifyJs": false,
@@ -60,6 +60,7 @@
           "target": "es2017"
         }
       ],
+      "bundles": [],
       "inputs": [
         "src/components/svg-app-container/svg-app-container.js"
       ],
@@ -76,17 +77,7 @@
           "dependencyOf": []
         }
       ],
-      "bundles": [
-        {
-          "fileName": "svg-button.entry.js",
-          "outputs": [
-            "dist/svg/svg-button.entry.js",
-            "www/build/svg/svg-button.entry.js"
-          ],
-          "size": 357,
-          "target": "es2017"
-        }
-      ],
+      "bundles": [],
       "inputs": [
         "src/components/svg-button/svg-button.js"
       ],
@@ -103,17 +94,7 @@
           "dependencyOf": []
         }
       ],
-      "bundles": [
-        {
-          "fileName": "svg-component-group.entry.js",
-          "outputs": [
-            "dist/svg/svg-component-group.entry.js",
-            "www/build/svg/svg-component-group.entry.js"
-          ],
-          "size": 390,
-          "target": "es2017"
-        }
-      ],
+      "bundles": [],
       "inputs": [
         "src/components/svg-component-group/svg-component-group.js"
       ],

@@ -23,7 +23,7 @@
 
 .svg-toggle-indicator {
   fill: var(--svg-toggle-indicator-color, red);
-  transition: all 0.3s ease;
+  transition: 0.2s ease-in-out;
 }
 
 .svg-toggle-container {
