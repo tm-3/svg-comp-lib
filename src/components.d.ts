@@ -12,34 +12,8 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface MyComponent {
-    /**
-    * The first name
-    */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
-  }
-  interface MyComponentAttributes extends StencilHTMLAttributes {
-    /**
-    * The first name
-    */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
-  }
+  interface SvgAppContainer {}
+  interface SvgAppContainerAttributes extends StencilHTMLAttributes {}
 
   interface SvgButton {}
   interface SvgButtonAttributes extends StencilHTMLAttributes {}
@@ -91,24 +65,24 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
-    'MyComponent': Components.MyComponent;
+    'SvgAppContainer': Components.SvgAppContainer;
     'SvgButton': Components.SvgButton;
     'SvgComponentGroup': Components.SvgComponentGroup;
     'SvgToggle': Components.SvgToggle;
   }
 
   interface StencilIntrinsicElements {
-    'my-component': Components.MyComponentAttributes;
+    'svg-app-container': Components.SvgAppContainerAttributes;
     'svg-button': Components.SvgButtonAttributes;
     'svg-component-group': Components.SvgComponentGroupAttributes;
     'svg-toggle': Components.SvgToggleAttributes;
   }
 
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  interface HTMLSvgAppContainerElement extends Components.SvgAppContainer, HTMLStencilElement {}
+  var HTMLSvgAppContainerElement: {
+    prototype: HTMLSvgAppContainerElement;
+    new (): HTMLSvgAppContainerElement;
   };
 
   interface HTMLSvgButtonElement extends Components.SvgButton, HTMLStencilElement {}
@@ -130,14 +104,14 @@ declare global {
   };
 
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement
+    'svg-app-container': HTMLSvgAppContainerElement
     'svg-button': HTMLSvgButtonElement
     'svg-component-group': HTMLSvgComponentGroupElement
     'svg-toggle': HTMLSvgToggleElement
   }
 
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'svg-app-container': HTMLSvgAppContainerElement;
     'svg-button': HTMLSvgButtonElement;
     'svg-component-group': HTMLSvgComponentGroupElement;
     'svg-toggle': HTMLSvgToggleElement;
