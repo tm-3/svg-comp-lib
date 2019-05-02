@@ -16,6 +16,7 @@ export class SvgToggle {
 
   @Prop() toggleOrientation: 'horizontal' | 'vertical' = 'horizontal';
   @Prop() label: string;
+  @Prop() labelPosition: 'left' | 'right' | 'top' | 'bottom' = 'right';
 
   /**
    * Defaults to true

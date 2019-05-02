@@ -21,8 +21,12 @@ export namespace Components {
   interface SvgComponentGroup {}
   interface SvgComponentGroupAttributes extends StencilHTMLAttributes {}
 
+  interface SvgLabel {}
+  interface SvgLabelAttributes extends StencilHTMLAttributes {}
+
   interface SvgToggle {
     'label': string;
+    'labelPosition': 'left' | 'right' | 'top' | 'bottom';
     /**
     * Defaults to true
     */
@@ -43,6 +47,7 @@ export namespace Components {
   }
   interface SvgToggleAttributes extends StencilHTMLAttributes {
     'label'?: string;
+    'labelPosition'?: 'left' | 'right' | 'top' | 'bottom';
     /**
     * Defaults to true
     */
@@ -68,6 +73,7 @@ declare global {
     'SvgAppContainer': Components.SvgAppContainer;
     'SvgButton': Components.SvgButton;
     'SvgComponentGroup': Components.SvgComponentGroup;
+    'SvgLabel': Components.SvgLabel;
     'SvgToggle': Components.SvgToggle;
   }
 
@@ -75,6 +81,7 @@ declare global {
     'svg-app-container': Components.SvgAppContainerAttributes;
     'svg-button': Components.SvgButtonAttributes;
     'svg-component-group': Components.SvgComponentGroupAttributes;
+    'svg-label': Components.SvgLabelAttributes;
     'svg-toggle': Components.SvgToggleAttributes;
   }
 
@@ -97,6 +104,12 @@ declare global {
     new (): HTMLSvgComponentGroupElement;
   };
 
+  interface HTMLSvgLabelElement extends Components.SvgLabel, HTMLStencilElement {}
+  var HTMLSvgLabelElement: {
+    prototype: HTMLSvgLabelElement;
+    new (): HTMLSvgLabelElement;
+  };
+
   interface HTMLSvgToggleElement extends Components.SvgToggle, HTMLStencilElement {}
   var HTMLSvgToggleElement: {
     prototype: HTMLSvgToggleElement;
@@ -107,6 +120,7 @@ declare global {
     'svg-app-container': HTMLSvgAppContainerElement
     'svg-button': HTMLSvgButtonElement
     'svg-component-group': HTMLSvgComponentGroupElement
+    'svg-label': HTMLSvgLabelElement
     'svg-toggle': HTMLSvgToggleElement
   }
 
@@ -114,6 +128,7 @@ declare global {
     'svg-app-container': HTMLSvgAppContainerElement;
     'svg-button': HTMLSvgButtonElement;
     'svg-component-group': HTMLSvgComponentGroupElement;
+    'svg-label': HTMLSvgLabelElement;
     'svg-toggle': HTMLSvgToggleElement;
   }
 

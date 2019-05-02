@@ -8,14 +8,12 @@
     />
     <title>SVG Component Library</title>
     <script src="/build/svg.js"></script>
-    
-    <style>
 
-    
+    <style>
       .svg-toggle-indicator {
-        fill: green;
+        /* fill: green; */
       }
-      
+
       .toggle {
         --svg-height: 75px;
         --svg-toggle-indicator-color: rgb(221, 213, 203);
@@ -29,7 +27,6 @@
       .svg-defs {
         display: none;
       }
-
 
       .wrapper {
         background-color: darkgrey;
@@ -49,22 +46,29 @@
         padding: 5px;
       }
     </style>
-  </head> 
+  </head>
   <body>
     <svg class="svg-defs">
       <defs>
-      
         <rect height="100" width="200" id="altToggleContainer" />
         <rect height="90" width="90" x="5" y="5" id="altToggleIndicator" />
-        <path d="M64.68 33.77L97.5 38.79L73.75 63.13L79.36 97.5L50 81.27L20.64 97.5L26.25 63.13L2.5 38.79L35.32 33.77L50 2.5L64.68 33.77Z" id="starIndicator" transform="scale(.7) translate(5 15)"></path>
-<!--         
+        <path
+          d="M64.68 33.77L97.5 38.79L73.75 63.13L79.36 97.5L50 81.27L20.64 97.5L26.25 63.13L2.5 38.79L35.32 33.77L50 2.5L64.68 33.77Z"
+          id="starIndicator"
+          transform="scale(.7) translate(5 15)"
+        ></path>
+        <!--
         <rect height="100" width="200" id="toggleContainer" />
         <rect height="90" width="90" x="5" y="5" id="toggleIndicator" /> -->
-       
       </defs>
     </svg>
     <div class="wrapper">
-      <svg-toggle class="toggle" id="3" toggle-indicator-url="#altToggleIndicator" toggle-container-url="#altToggleContainer"></svg-toggle>
+      <svg-toggle
+        class="toggle"
+        id="3"
+        toggle-indicator-url="#altToggleIndicator"
+        toggle-container-url="#altToggleContainer"
+      ></svg-toggle>
       <svg-toggle class="toggle" id="2" toggle-indicator-url="#starIndicator"></svg-toggle>
       <svg-toggle id="33"></svg-toggle>
     </div>

@@ -3,7 +3,7 @@ import { Component } from '@stencil/core';
 @Component({
   tag: 'svg-button',
   styleUrl: 'svg-button.css',
-  shadow: true,
+  shadow: false,
 })
 export class SvgButton {
   render() {

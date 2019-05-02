@@ -1,14 +1,14 @@
 {
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.16.4"
+    "version": "0.16.2"
   },
   "app": {
     "namespace": "svg",
     "fsNamespace": "svg",
-    "components": 4,
-    "entries": 4,
-    "bundles": 0
+    "components": 5,
+    "entries": 5,
+    "bundles": 5
   },
   "options": {
     "minifyJs": false,
@@ -30,6 +30,11 @@
     },
     {
       "tag": "svg-component-group",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-label",
       "dependencies": [],
       "dependencyOf": []
     },
@@ -60,7 +65,6 @@
           "target": "es2017"
         }
       ],
-      "bundles": [],
       "inputs": [
         "src/components/svg-app-container/svg-app-container.js"
       ],
@@ -77,12 +81,22 @@
           "dependencyOf": []
         }
       ],
-      "bundles": [],
+      "bundles": [
+        {
+          "fileName": "svg-button.entry.js",
+          "outputs": [
+            "dist/svg/svg-button.entry.js",
+            "www/build/svg/svg-button.entry.js"
+          ],
+          "size": 304,
+          "target": "es2017"
+        }
+      ],
       "inputs": [
         "src/components/svg-button/svg-button.js"
       ],
       "encapsulations": [
-        "shadow"
+        "none"
       ]
     },
     {
@@ -94,12 +108,49 @@
           "dependencyOf": []
         }
       ],
-      "bundles": [],
+      "bundles": [
+        {
+          "fileName": "svg-component-group.entry.js",
+          "outputs": [
+            "dist/svg/svg-component-group.entry.js",
+            "www/build/svg/svg-component-group.entry.js"
+          ],
+          "size": 390,
+          "target": "es2017"
+        }
+      ],
       "inputs": [
         "src/components/svg-component-group/svg-component-group.js"
       ],
       "encapsulations": [
         "shadow"
+      ]
+    },
+    {
+      "entryId": "entry.svg-label",
+      "components": [
+        {
+          "tag": "svg-label",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-label.entry.js",
+          "outputs": [
+            "dist/svg/svg-label.entry.js",
+            "www/build/svg/svg-label.entry.js"
+          ],
+          "size": 304,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-label/svg-label.js"
+      ],
+      "encapsulations": [
+        "none"
       ]
     },
     {
@@ -118,7 +169,7 @@
             "dist/svg/svg-toggle.entry.js",
             "www/build/svg/svg-toggle.entry.js"
           ],
-          "size": 4733,
+          "size": 4885,
           "target": "es2017"
         }
       ],
@@ -133,41 +184,21 @@
   "rollupResults": {
     "modules": [
       {
-        "id": "entry.svg-toggle.js",
+        "id": "entry.svg-app-container.js",
         "isEntry": true,
         "imports": [],
         "exports": [
-          "SvgToggle"
+          "SvgAppContainer"
         ],
         "modules": [
           {
-            "filename": "/sandbox/src/components/svg-toggle/svg-toggle.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-app-container/svg-app-container.js",
             "exports": [
-              "SvgToggle"
+              "SvgAppContainer"
             ]
           },
           {
-            "filename": "/sandbox/src/entry.svg-toggle.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-component-group.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgComponentGroup"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-component-group/svg-component-group.js",
-            "exports": [
-              "SvgComponentGroup"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-component-group.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-app-container.js",
             "exports": []
           }
         ]
@@ -181,33 +212,73 @@
         ],
         "modules": [
           {
-            "filename": "/sandbox/src/components/svg-button/svg-button.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-button/svg-button.js",
             "exports": [
               "SvgButton"
             ]
           },
           {
-            "filename": "/sandbox/src/entry.svg-button.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-button.js",
             "exports": []
           }
         ]
       },
       {
-        "id": "entry.svg-app-container.js",
+        "id": "entry.svg-component-group.js",
         "isEntry": true,
         "imports": [],
         "exports": [
-          "SvgAppContainer"
+          "SvgComponentGroup"
         ],
         "modules": [
           {
-            "filename": "/sandbox/src/components/svg-app-container/svg-app-container.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-component-group/svg-component-group.js",
             "exports": [
-              "SvgAppContainer"
+              "SvgComponentGroup"
             ]
           },
           {
-            "filename": "/sandbox/src/entry.svg-app-container.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-component-group.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-label.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgLabel"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-label/svg-label.js",
+            "exports": [
+              "SvgLabel"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-label.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-toggle.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgToggle"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-toggle/svg-toggle.js",
+            "exports": [
+              "SvgToggle"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-toggle.js",
             "exports": []
           }
         ]
@@ -219,6 +290,7 @@
     "src/components/svg-app-container/svg-app-container.tsx": [],
     "src/components/svg-button/svg-button.tsx": [],
     "src/components/svg-component-group/svg-component-group.tsx": [],
+    "src/components/svg-label/svg-label.tsx": [],
     "src/components/svg-toggle/svg-toggle.tsx": [],
     "src/globals/app.ts": [],
     "src/utils/utils.spec.ts": [
