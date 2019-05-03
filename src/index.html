@@ -44,14 +44,17 @@
         display: grid;
       }
 
-      .web-console {
+      .web-console { 
         border: 1px solid #ccc;
         padding: 5px;
       }
     </style>
-  </head>
-  <body>
-    <!-- <svg-definitions></svg-definitions> -->
+        </head>  
+<body>  
+<svg xmlns="http://www.w3.org/2000/svg">
+  <rect id="someRect" height="100" width="50" filter="url(assets/baseDefs.svg#red-glow)" />
+</svg>
+
     <svg class="svg-defs">
       <defs>
         <rect height="100" width="200" id="altToggleContainer" />

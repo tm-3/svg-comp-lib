@@ -33,6 +33,6 @@
 .selected-state {
   transform: translate(100px);
   fill: var(--svg-toggle-indicator-selected-color, grey);
-  filter: var(--svg-toggle-indicator-filter, url('#yellow-glow'));
+  filter: var(--svg-toggle-indicator-filter, url('#white-glow'));
   /* filter: url('#yellow-glow'); */
 }

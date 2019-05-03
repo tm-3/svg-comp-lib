@@ -1,14 +1,14 @@
 {
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.16.4"
+    "version": "0.16.2"
   },
   "app": {
     "namespace": "svg",
     "fsNamespace": "svg",
-    "components": 42,
-    "entries": 42,
-    "bundles": 42
+    "components": 43,
+    "entries": 43,
+    "bundles": 43
   },
   "options": {
     "minifyJs": false,
@@ -70,6 +70,11 @@
     },
     {
       "tag": "svg-date-picker",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-definitions",
       "dependencies": [],
       "dependencyOf": []
     },
@@ -408,7 +413,7 @@
             "dist/svg/svg-check-box.entry.js",
             "www/build/svg/svg-check-box.entry.js"
           ],
-          "size": 321,
+          "size": 590,
           "target": "es2017"
         }
       ],
@@ -522,6 +527,33 @@
       ],
       "inputs": [
         "src/components/svg-date-picker/svg-date-picker.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-definitions",
+      "components": [
+        {
+          "tag": "svg-definitions",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-definitions.entry.js",
+          "outputs": [
+            "dist/svg/svg-definitions.entry.js",
+            "www/build/svg/svg-definitions.entry.js"
+          ],
+          "size": 1381,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-definitions/svg-definitions.js"
       ],
       "encapsulations": [
         "none"
@@ -1326,7 +1358,7 @@
             "dist/svg/svg-toggle.entry.js",
             "www/build/svg/svg-toggle.entry.js"
           ],
-          "size": 4885,
+          "size": 5122,
           "target": "es2017"
         }
       ],
@@ -1368,66 +1400,6 @@
   "rollupResults": {
     "modules": [
       {
-        "id": "entry.svg-label.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgLabel"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-label/svg-label.js",
-            "exports": [
-              "SvgLabel"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-label.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-toolbar.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgToolbar"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-toolbar/svg-toolbar.js",
-            "exports": [
-              "SvgToolbar"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-toolbar.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-layout-grid.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgLayoutGrid"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-layout-grid/svg-layout-grid.js",
-            "exports": [
-              "SvgLayoutGrid"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-layout-grid.js",
-            "exports": []
-          }
-        ]
-      },
-      {
         "id": "entry.svg-app-container.js",
         "isEntry": true,
         "imports": [],
@@ -1436,673 +1408,13 @@
         ],
         "modules": [
           {
-            "filename": "/sandbox/src/components/svg-app-container/svg-app-container.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-app-container/svg-app-container.js",
             "exports": [
               "SvgAppContainer"
             ]
           },
           {
-            "filename": "/sandbox/src/entry.svg-app-container.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-list.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgList"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-list/svg-list.js",
-            "exports": [
-              "SvgList"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-list.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-breadcrumb-item.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgBreadcrumbItem"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-breadcrumb-item/svg-breadcrumb-item.js",
-            "exports": [
-              "SvgBreadcrumbItem"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-breadcrumb-item.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-list-item.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgListItem"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-list-item/svg-list-item.js",
-            "exports": [
-              "SvgListItem"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-list-item.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-card.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgCard"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-card/svg-card.js",
-            "exports": [
-              "SvgCard"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-card.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-menu.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgMenu"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-menu/svg-menu.js",
-            "exports": [
-              "SvgMenu"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-menu.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-check-box.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgCheckBox"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-check-box/svg-check-box.js",
-            "exports": [
-              "SvgCheckBox"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-check-box.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-menu-item.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgMenuItem"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-menu-item/svg-menu-item.js",
-            "exports": [
-              "SvgMenuItem"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-menu-item.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-component-group.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgComponentGroup"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-component-group/svg-component-group.js",
-            "exports": [
-              "SvgComponentGroup"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-component-group.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-pagination.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgPagination"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-pagination/svg-pagination.js",
-            "exports": [
-              "SvgPagination"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-pagination.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-date-picker.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgDatePicker"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-date-picker/svg-date-picker.js",
-            "exports": [
-              "SvgDatePicker"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-date-picker.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-panel.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgPanel"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-panel/svg-panel.js",
-            "exports": [
-              "SvgPanel"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-panel.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-dialog.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgDialog"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-dialog/svg-dialog.js",
-            "exports": [
-              "SvgDialog"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-dialog.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-progress-indicator.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgProgressIndicator"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-progress-indicator/svg-progress-indicator.js",
-            "exports": [
-              "SvgProgressIndicator"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-progress-indicator.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-drop-down-menu.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgDropDownMenu"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-drop-down-menu/svg-drop-down-menu.js",
-            "exports": [
-              "SvgDropDownMenu"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-drop-down-menu.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-slider.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgSlider"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-slider/svg-slider.js",
-            "exports": [
-              "SvgSlider"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-slider.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-footer.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgFooter"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-footer/svg-footer.js",
-            "exports": [
-              "SvgFooter"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-footer.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-sparkline.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgSparkline"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-sparkline/svg-sparkline.js",
-            "exports": [
-              "SvgSparkline"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-sparkline.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-form-section.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgFormSection"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-form-section/svg-form-section.js",
-            "exports": [
-              "SvgFormSection"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-form-section.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-spinner.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgSpinner"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-spinner/svg-spinner.js",
-            "exports": [
-              "SvgSpinner"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-spinner.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-indicator-light.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgIndicatorLight"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-indicator-light/svg-indicator-light.js",
-            "exports": [
-              "SvgIndicatorLight"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-indicator-light.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-stepper.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgStepper"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-stepper/svg-stepper.js",
-            "exports": [
-              "SvgStepper"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-stepper.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-button.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgButton"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-button/svg-button.js",
-            "exports": [
-              "SvgButton"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-button.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-tab.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgTab"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-tab/svg-tab.js",
-            "exports": [
-              "SvgTab"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-tab.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-combo-box.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgComboBox"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-combo-box/svg-combo-box.js",
-            "exports": [
-              "SvgComboBox"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-combo-box.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-tab-container.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgTabContainer"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-tab-container/svg-tab-container.js",
-            "exports": [
-              "SvgTabContainer"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-tab-container.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-dial.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgDial"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-dial/svg-dial.js",
-            "exports": [
-              "SvgDial"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-dial.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-text-area.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgTextArea"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-text-area/svg-text-area.js",
-            "exports": [
-              "SvgTextArea"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-text-area.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-expansion-panel.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgExpansionPanel"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-expansion-panel/svg-expansion-panel.js",
-            "exports": [
-              "SvgExpansionPanel"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-expansion-panel.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-header.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgHeader"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-header/svg-header.js",
-            "exports": [
-              "SvgHeader"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-header.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-toggle.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgToggle"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-toggle/svg-toggle.js",
-            "exports": [
-              "SvgToggle"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-toggle.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-timeline.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgTimeline"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-timeline/svg-timeline.js",
-            "exports": [
-              "SvgTimeline"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-timeline.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-time-picker.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgTimePicker"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-time-picker/svg-time-picker.js",
-            "exports": [
-              "SvgTimePicker"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-time-picker.js",
-            "exports": []
-          }
-        ]
-      },
-      {
-        "id": "entry.svg-text-box.js",
-        "isEntry": true,
-        "imports": [],
-        "exports": [
-          "SvgTextBox"
-        ],
-        "modules": [
-          {
-            "filename": "/sandbox/src/components/svg-text-box/svg-text-box.js",
-            "exports": [
-              "SvgTextBox"
-            ]
-          },
-          {
-            "filename": "/sandbox/src/entry.svg-text-box.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-app-container.js",
             "exports": []
           }
         ]
@@ -2116,73 +1428,73 @@
         ],
         "modules": [
           {
-            "filename": "/sandbox/src/components/svg-breadcrumb-container/svg-breadcrumb-container.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-breadcrumb-container/svg-breadcrumb-container.js",
             "exports": [
               "SvgBreadcrumbContainer"
             ]
           },
           {
-            "filename": "/sandbox/src/entry.svg-breadcrumb-container.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-breadcrumb-container.js",
             "exports": []
           }
         ]
       },
       {
-        "id": "entry.svg-form-container.js",
+        "id": "entry.svg-breadcrumb-item.js",
         "isEntry": true,
         "imports": [],
         "exports": [
-          "SvgFormContainer"
+          "SvgBreadcrumbItem"
         ],
         "modules": [
           {
-            "filename": "/sandbox/src/components/svg-form-container/svg-form-container.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-breadcrumb-item/svg-breadcrumb-item.js",
             "exports": [
-              "SvgFormContainer"
+              "SvgBreadcrumbItem"
             ]
           },
           {
-            "filename": "/sandbox/src/entry.svg-form-container.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-breadcrumb-item.js",
             "exports": []
           }
         ]
       },
       {
-        "id": "entry.svg-divider.js",
+        "id": "entry.svg-button.js",
         "isEntry": true,
         "imports": [],
         "exports": [
-          "SvgDivider"
+          "SvgButton"
         ],
         "modules": [
           {
-            "filename": "/sandbox/src/components/svg-divider/svg-divider.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-button/svg-button.js",
             "exports": [
-              "SvgDivider"
+              "SvgButton"
             ]
           },
           {
-            "filename": "/sandbox/src/entry.svg-divider.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-button.js",
             "exports": []
           }
         ]
       },
       {
-        "id": "entry.svg-data-grid.js",
+        "id": "entry.svg-card.js",
         "isEntry": true,
         "imports": [],
         "exports": [
-          "SvgDataGrid"
+          "SvgCard"
         ],
         "modules": [
           {
-            "filename": "/sandbox/src/components/svg-data-grid/svg-data-grid.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-card/svg-card.js",
             "exports": [
-              "SvgDataGrid"
+              "SvgCard"
             ]
           },
           {
-            "filename": "/sandbox/src/entry.svg-data-grid.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-card.js",
             "exports": []
           }
         ]
@@ -2196,13 +1508,753 @@
         ],
         "modules": [
           {
-            "filename": "/sandbox/src/components/svg-carousel/svg-carousel.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-carousel/svg-carousel.js",
             "exports": [
               "SvgCarousel"
             ]
           },
           {
-            "filename": "/sandbox/src/entry.svg-carousel.js",
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-carousel.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-check-box.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgCheckBox"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-check-box/svg-check-box.js",
+            "exports": [
+              "SvgCheckBox"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-check-box.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-combo-box.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgComboBox"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-combo-box/svg-combo-box.js",
+            "exports": [
+              "SvgComboBox"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-combo-box.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-component-group.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgComponentGroup"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-component-group/svg-component-group.js",
+            "exports": [
+              "SvgComponentGroup"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-component-group.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-data-grid.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgDataGrid"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-data-grid/svg-data-grid.js",
+            "exports": [
+              "SvgDataGrid"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-data-grid.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-date-picker.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgDatePicker"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-date-picker/svg-date-picker.js",
+            "exports": [
+              "SvgDatePicker"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-date-picker.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-definitions.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgDefinitions"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-definitions/svg-definitions.js",
+            "exports": [
+              "SvgDefinitions"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-definitions.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-dial.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgDial"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-dial/svg-dial.js",
+            "exports": [
+              "SvgDial"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-dial.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-dialog.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgDialog"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-dialog/svg-dialog.js",
+            "exports": [
+              "SvgDialog"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-dialog.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-divider.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgDivider"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-divider/svg-divider.js",
+            "exports": [
+              "SvgDivider"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-divider.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-drop-down-menu.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgDropDownMenu"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-drop-down-menu/svg-drop-down-menu.js",
+            "exports": [
+              "SvgDropDownMenu"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-drop-down-menu.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-expansion-panel.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgExpansionPanel"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-expansion-panel/svg-expansion-panel.js",
+            "exports": [
+              "SvgExpansionPanel"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-expansion-panel.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-footer.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgFooter"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-footer/svg-footer.js",
+            "exports": [
+              "SvgFooter"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-footer.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-form-container.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgFormContainer"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-form-container/svg-form-container.js",
+            "exports": [
+              "SvgFormContainer"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-form-container.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-form-section.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgFormSection"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-form-section/svg-form-section.js",
+            "exports": [
+              "SvgFormSection"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-form-section.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-header.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgHeader"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-header/svg-header.js",
+            "exports": [
+              "SvgHeader"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-header.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-indicator-light.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgIndicatorLight"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-indicator-light/svg-indicator-light.js",
+            "exports": [
+              "SvgIndicatorLight"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-indicator-light.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-label.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgLabel"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-label/svg-label.js",
+            "exports": [
+              "SvgLabel"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-label.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-layout-grid.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgLayoutGrid"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-layout-grid/svg-layout-grid.js",
+            "exports": [
+              "SvgLayoutGrid"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-layout-grid.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-list.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgList"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-list/svg-list.js",
+            "exports": [
+              "SvgList"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-list.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-list-item.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgListItem"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-list-item/svg-list-item.js",
+            "exports": [
+              "SvgListItem"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-list-item.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-menu.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgMenu"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-menu/svg-menu.js",
+            "exports": [
+              "SvgMenu"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-menu.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-menu-item.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgMenuItem"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-menu-item/svg-menu-item.js",
+            "exports": [
+              "SvgMenuItem"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-menu-item.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-pagination.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgPagination"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-pagination/svg-pagination.js",
+            "exports": [
+              "SvgPagination"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-pagination.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-panel.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgPanel"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-panel/svg-panel.js",
+            "exports": [
+              "SvgPanel"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-panel.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-progress-indicator.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgProgressIndicator"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-progress-indicator/svg-progress-indicator.js",
+            "exports": [
+              "SvgProgressIndicator"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-progress-indicator.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-slider.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgSlider"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-slider/svg-slider.js",
+            "exports": [
+              "SvgSlider"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-slider.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-sparkline.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgSparkline"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-sparkline/svg-sparkline.js",
+            "exports": [
+              "SvgSparkline"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-sparkline.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-spinner.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgSpinner"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-spinner/svg-spinner.js",
+            "exports": [
+              "SvgSpinner"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-spinner.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-stepper.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgStepper"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-stepper/svg-stepper.js",
+            "exports": [
+              "SvgStepper"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-stepper.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-tab.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgTab"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-tab/svg-tab.js",
+            "exports": [
+              "SvgTab"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-tab.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-tab-container.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgTabContainer"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-tab-container/svg-tab-container.js",
+            "exports": [
+              "SvgTabContainer"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-tab-container.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-text-area.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgTextArea"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-text-area/svg-text-area.js",
+            "exports": [
+              "SvgTextArea"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-text-area.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-text-box.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgTextBox"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-text-box/svg-text-box.js",
+            "exports": [
+              "SvgTextBox"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-text-box.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-time-picker.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgTimePicker"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-time-picker/svg-time-picker.js",
+            "exports": [
+              "SvgTimePicker"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-time-picker.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-timeline.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgTimeline"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-timeline/svg-timeline.js",
+            "exports": [
+              "SvgTimeline"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-timeline.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-toggle.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgToggle"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-toggle/svg-toggle.js",
+            "exports": [
+              "SvgToggle"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-toggle.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-toolbar.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgToolbar"
+        ],
+        "modules": [
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-toolbar/svg-toolbar.js",
+            "exports": [
+              "SvgToolbar"
+            ]
+          },
+          {
+            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-toolbar.js",
             "exports": []
           }
         ]
@@ -2222,6 +2274,7 @@
     "src/components/svg-component-group/svg-component-group.tsx": [],
     "src/components/svg-data-grid/svg-data-grid.tsx": [],
     "src/components/svg-date-picker/svg-date-picker.tsx": [],
+    "src/components/svg-definitions/svg-definitions.tsx": [],
     "src/components/svg-dial/svg-dial.tsx": [],
     "src/components/svg-dialog/svg-dialog.tsx": [],
     "src/components/svg-divider/svg-divider.tsx": [],
@@ -2253,6 +2306,7 @@
     "src/components/svg-timeline/svg-timeline.tsx": [],
     "src/components/svg-toggle/svg-toggle.tsx": [],
     "src/components/svg-toolbar/svg-toolbar.tsx": [],
+    "src/filters/blur.ts": [],
     "src/globals/app.ts": [],
     "src/utils/utils.spec.ts": [
       "src/utils/utils"

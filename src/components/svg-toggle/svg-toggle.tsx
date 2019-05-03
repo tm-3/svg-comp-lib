@@ -97,14 +97,22 @@ export class SvgToggle {
         <g>
           <use
             ref={(el) => (this.toggleGroup = el as SVGGraphicsElement)}
-            href={this.toggleContainerUrl ? this.toggleContainerUrl : 'url(assetss/baseDefs.svg#toggleContainer)'}
+            href={
+              this.toggleContainerUrl
+                ? this.toggleContainerUrl
+                : 'assets/baseDefs.svg#toggleContainer'
+            }
             class="svg-toggle-container"
           />
         </g>
         <g>
           <use
             ref={(el) => (this.toggleIndicator = el as SVGGraphicsElement)}
-            href={this.toggleIndicatorUrl ? this.toggleIndicatorUrl : '#toggleIndicator'}
+            href={
+              this.toggleIndicatorUrl
+                ? this.toggleIndicatorUrl
+                : 'assets/baseDefs.svg#toggleIndicator'
+            }
             class="svg-toggle-indicator"
           />
         </g>
