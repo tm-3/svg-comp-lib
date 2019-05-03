@@ -1,4 +1,4 @@
-:host {
+svg-toggle {
   /**
   * @prop --svg-height: Height of the toggle control
   * @prop --svg-width: Width of the toggle
@@ -7,7 +7,7 @@
   * @prop --svg-toggle-indicator-active-color: Color of the indicator when selecgted;
   * @prop --svg-toggle-container-active-color: Color of the container when selected;
   */
-/* 
+  /* 
   --svg-height: 25px;
   --svg-width: '';
   --svg-toggle-indicator-color: rgb(209, 77, 77);
@@ -30,9 +30,8 @@
   fill: var(--svg-toggle-container-color);
 }
 
-.selected-state {
+.svg-toggle-selected-state {
   transform: translate(100px);
-  fill: var(--svg-toggle-indicator-selected-color, grey);
-  filter: var(--svg-toggle-indicator-filter, url('#white-glow'));
-  /* filter: url('#yellow-glow'); */
+  /* fill: var(--svg-toggle-indicator-selected-color, grey); */
+  fill: red;
 }

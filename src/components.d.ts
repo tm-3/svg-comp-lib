@@ -155,6 +155,7 @@ export namespace Components {
     */
     'toggleIndicatorUrl': string;
     'toggleOrientation': 'horizontal' | 'vertical';
+    'toggleSelected': () => void;
     /**
     * The viewbox of the SVG
     */
@@ -163,6 +164,7 @@ export namespace Components {
   interface SvgToggleAttributes extends StencilHTMLAttributes {
     'label'?: string;
     'labelPosition'?: 'left' | 'right' | 'top' | 'bottom';
+    'onTOM'?: (event: CustomEvent) => void;
     /**
     * Defaults to true
     */

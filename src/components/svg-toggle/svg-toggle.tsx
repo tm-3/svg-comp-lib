@@ -1,4 +1,4 @@
-import { Component, Element, Method, Prop, State, Watch } from '@stencil/core';
+import { Component, Element, Event, EventEmitter, Method, Prop, State, Watch } from '@stencil/core';
 
 @Component({
   tag: 'svg-toggle',
@@ -39,15 +39,26 @@ export class SvgToggle {
 
   @Watch('isSelected') stateHandler() {
     if (this.isSelected) {
-      this.toggleIndicator.classList.add('selected-state');
+      this.toggleIndicator.classList.add('svg-toggle-selected-state');
 
       console.log(this.toggleIndicator.attributes);
     } else {
-      this.toggleIndicator.classList.remove('selected-state');
+      this.toggleIndicator.classList.remove('svg-toggle-selected-state');
     }
   }
 
-  componentWillLoad() {}
+  @Event({ eventName: 'TOM' }) toggled: EventEmitter;
+
+  @Method()
+  toggleSelected() {
+    this.isSelected = !this.isSelected;
+    this.toggled.emit({ id: this.el.id, selected: this.isSelected });
+  }
+
+  componentWillLoad() {
+    //should I check for state in the state container here?
+    //Or should I just handle that in the componentDidLoad method?
+  }
   componentDidLoad() {
     this.registerComponent();
 
@@ -56,13 +67,6 @@ export class SvgToggle {
   }
 
   registerComponent() {}
-
-  handleClick(e?: any) {
-    if (e) {
-      // console.log(e);
-    }
-    this.isSelected = !this.isSelected;
-  }
 
   hostData() {
     return {
@@ -79,21 +83,9 @@ export class SvgToggle {
         version="1.1"
         viewBox={this.viewBox}
         class="svg-toggle"
-        onClick={(event: UIEvent) => this.handleClick(event)}
+        onClick={() => this.toggleSelected()}
         ref={(el) => (this.svgRoot = el as SVGGraphicsElement)}
       >
-        <defs>
-          <filter id="yellow-glow" x="-5000%" y="-5000%" width="10000%" height="10000%">
-            <feFlood result="flood" flood-color="yellow" flood-opacity="1" />
-            <feComposite in="flood" result="mask" in2="SourceGraphic" operator="in" />
-            <feMorphology in="mask" result="dilated" operator="dilate" radius="2" />
-            <feGaussianBlur in="dilated" result="blurred" stdDeviation="5" />
-            <feMerge>
-              <feMergeNode in="blurred" />
-              <feMergeNode in="SourceGraphic" />
-            </feMerge>
-          </filter>
-        </defs>
         <g>
           <use
             ref={(el) => (this.toggleGroup = el as SVGGraphicsElement)}
