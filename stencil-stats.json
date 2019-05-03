@@ -1,14 +1,14 @@
 {
   "compiler": {
     "name": "@stencil/core",
-    "version": "0.16.2"
+    "version": "0.16.4"
   },
   "app": {
     "namespace": "svg",
     "fsNamespace": "svg",
-    "components": 5,
-    "entries": 5,
-    "bundles": 5
+    "components": 42,
+    "entries": 42,
+    "bundles": 42
   },
   "options": {
     "minifyJs": false,
@@ -24,7 +24,37 @@
       "dependencyOf": []
     },
     {
+      "tag": "svg-breadcrumb-container",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-breadcrumb-item",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
       "tag": "svg-button",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-card",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-carousel",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-check-box",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-combo-box",
       "dependencies": [],
       "dependencyOf": []
     },
@@ -34,12 +64,167 @@
       "dependencyOf": []
     },
     {
+      "tag": "svg-data-grid",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-date-picker",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-dial",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-dialog",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-divider",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-drop-down-menu",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-expansion-panel",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-footer",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-form-container",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-form-section",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-header",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-indicator-light",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
       "tag": "svg-label",
       "dependencies": [],
       "dependencyOf": []
     },
     {
+      "tag": "svg-layout-grid",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-list",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-list-item",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-menu",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-menu-item",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-pagination",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-panel",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-progress-indicator",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-slider",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-sparkline",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-spinner",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-stepper",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-tab",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-tab-container",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-text-area",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-text-box",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-time-picker",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-timeline",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
       "tag": "svg-toggle",
+      "dependencies": [],
+      "dependencyOf": []
+    },
+    {
+      "tag": "svg-toolbar",
       "dependencies": [],
       "dependencyOf": []
     }
@@ -73,6 +258,60 @@
       ]
     },
     {
+      "entryId": "entry.svg-breadcrumb-container",
+      "components": [
+        {
+          "tag": "svg-breadcrumb-container",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-breadcrumb-container.entry.js",
+          "outputs": [
+            "dist/svg/svg-breadcrumb-container.entry.js",
+            "www/build/svg/svg-breadcrumb-container.entry.js"
+          ],
+          "size": 376,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-breadcrumb-container/svg-breadcrumb-container.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-breadcrumb-item",
+      "components": [
+        {
+          "tag": "svg-breadcrumb-item",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-breadcrumb-item.entry.js",
+          "outputs": [
+            "dist/svg/svg-breadcrumb-item.entry.js",
+            "www/build/svg/svg-breadcrumb-item.entry.js"
+          ],
+          "size": 351,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-breadcrumb-item/svg-breadcrumb-item.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
       "entryId": "entry.svg-button",
       "components": [
         {
@@ -94,6 +333,114 @@
       ],
       "inputs": [
         "src/components/svg-button/svg-button.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-card",
+      "components": [
+        {
+          "tag": "svg-card",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-card.entry.js",
+          "outputs": [
+            "dist/svg/svg-card.entry.js",
+            "www/build/svg/svg-card.entry.js"
+          ],
+          "size": 299,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-card/svg-card.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-carousel",
+      "components": [
+        {
+          "tag": "svg-carousel",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-carousel.entry.js",
+          "outputs": [
+            "dist/svg/svg-carousel.entry.js",
+            "www/build/svg/svg-carousel.entry.js"
+          ],
+          "size": 319,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-carousel/svg-carousel.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-check-box",
+      "components": [
+        {
+          "tag": "svg-check-box",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-check-box.entry.js",
+          "outputs": [
+            "dist/svg/svg-check-box.entry.js",
+            "www/build/svg/svg-check-box.entry.js"
+          ],
+          "size": 321,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-check-box/svg-check-box.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-combo-box",
+      "components": [
+        {
+          "tag": "svg-combo-box",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-combo-box.entry.js",
+          "outputs": [
+            "dist/svg/svg-combo-box.entry.js",
+            "www/build/svg/svg-combo-box.entry.js"
+          ],
+          "size": 321,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-combo-box/svg-combo-box.js"
       ],
       "encapsulations": [
         "none"
@@ -127,6 +474,330 @@
       ]
     },
     {
+      "entryId": "entry.svg-data-grid",
+      "components": [
+        {
+          "tag": "svg-data-grid",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-data-grid.entry.js",
+          "outputs": [
+            "dist/svg/svg-data-grid.entry.js",
+            "www/build/svg/svg-data-grid.entry.js"
+          ],
+          "size": 321,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-data-grid/svg-data-grid.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-date-picker",
+      "components": [
+        {
+          "tag": "svg-date-picker",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-date-picker.entry.js",
+          "outputs": [
+            "dist/svg/svg-date-picker.entry.js",
+            "www/build/svg/svg-date-picker.entry.js"
+          ],
+          "size": 331,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-date-picker/svg-date-picker.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-dial",
+      "components": [
+        {
+          "tag": "svg-dial",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-dial.entry.js",
+          "outputs": [
+            "dist/svg/svg-dial.entry.js",
+            "www/build/svg/svg-dial.entry.js"
+          ],
+          "size": 299,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-dial/svg-dial.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-dialog",
+      "components": [
+        {
+          "tag": "svg-dialog",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-dialog.entry.js",
+          "outputs": [
+            "dist/svg/svg-dialog.entry.js",
+            "www/build/svg/svg-dialog.entry.js"
+          ],
+          "size": 309,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-dialog/svg-dialog.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-divider",
+      "components": [
+        {
+          "tag": "svg-divider",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-divider.entry.js",
+          "outputs": [
+            "dist/svg/svg-divider.entry.js",
+            "www/build/svg/svg-divider.entry.js"
+          ],
+          "size": 314,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-divider/svg-divider.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-drop-down-menu",
+      "components": [
+        {
+          "tag": "svg-drop-down-menu",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-drop-down-menu.entry.js",
+          "outputs": [
+            "dist/svg/svg-drop-down-menu.entry.js",
+            "www/build/svg/svg-drop-down-menu.entry.js"
+          ],
+          "size": 343,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-drop-down-menu/svg-drop-down-menu.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-expansion-panel",
+      "components": [
+        {
+          "tag": "svg-expansion-panel",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-expansion-panel.entry.js",
+          "outputs": [
+            "dist/svg/svg-expansion-panel.entry.js",
+            "www/build/svg/svg-expansion-panel.entry.js"
+          ],
+          "size": 351,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-expansion-panel/svg-expansion-panel.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-footer",
+      "components": [
+        {
+          "tag": "svg-footer",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-footer.entry.js",
+          "outputs": [
+            "dist/svg/svg-footer.entry.js",
+            "www/build/svg/svg-footer.entry.js"
+          ],
+          "size": 309,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-footer/svg-footer.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-form-container",
+      "components": [
+        {
+          "tag": "svg-form-container",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-form-container.entry.js",
+          "outputs": [
+            "dist/svg/svg-form-container.entry.js",
+            "www/build/svg/svg-form-container.entry.js"
+          ],
+          "size": 346,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-form-container/svg-form-container.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-form-section",
+      "components": [
+        {
+          "tag": "svg-form-section",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-form-section.entry.js",
+          "outputs": [
+            "dist/svg/svg-form-section.entry.js",
+            "www/build/svg/svg-form-section.entry.js"
+          ],
+          "size": 336,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-form-section/svg-form-section.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-header",
+      "components": [
+        {
+          "tag": "svg-header",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-header.entry.js",
+          "outputs": [
+            "dist/svg/svg-header.entry.js",
+            "www/build/svg/svg-header.entry.js"
+          ],
+          "size": 309,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-header/svg-header.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-indicator-light",
+      "components": [
+        {
+          "tag": "svg-indicator-light",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-indicator-light.entry.js",
+          "outputs": [
+            "dist/svg/svg-indicator-light.entry.js",
+            "www/build/svg/svg-indicator-light.entry.js"
+          ],
+          "size": 351,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-indicator-light/svg-indicator-light.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
       "entryId": "entry.svg-label",
       "components": [
         {
@@ -148,6 +819,492 @@
       ],
       "inputs": [
         "src/components/svg-label/svg-label.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-layout-grid",
+      "components": [
+        {
+          "tag": "svg-layout-grid",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-layout-grid.entry.js",
+          "outputs": [
+            "dist/svg/svg-layout-grid.entry.js",
+            "www/build/svg/svg-layout-grid.entry.js"
+          ],
+          "size": 331,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-layout-grid/svg-layout-grid.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-list",
+      "components": [
+        {
+          "tag": "svg-list",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-list.entry.js",
+          "outputs": [
+            "dist/svg/svg-list.entry.js",
+            "www/build/svg/svg-list.entry.js"
+          ],
+          "size": 299,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-list/svg-list.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-list-item",
+      "components": [
+        {
+          "tag": "svg-list-item",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-list-item.entry.js",
+          "outputs": [
+            "dist/svg/svg-list-item.entry.js",
+            "www/build/svg/svg-list-item.entry.js"
+          ],
+          "size": 321,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-list-item/svg-list-item.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-menu",
+      "components": [
+        {
+          "tag": "svg-menu",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-menu.entry.js",
+          "outputs": [
+            "dist/svg/svg-menu.entry.js",
+            "www/build/svg/svg-menu.entry.js"
+          ],
+          "size": 299,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-menu/svg-menu.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-menu-item",
+      "components": [
+        {
+          "tag": "svg-menu-item",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-menu-item.entry.js",
+          "outputs": [
+            "dist/svg/svg-menu-item.entry.js",
+            "www/build/svg/svg-menu-item.entry.js"
+          ],
+          "size": 321,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-menu-item/svg-menu-item.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-pagination",
+      "components": [
+        {
+          "tag": "svg-pagination",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-pagination.entry.js",
+          "outputs": [
+            "dist/svg/svg-pagination.entry.js",
+            "www/build/svg/svg-pagination.entry.js"
+          ],
+          "size": 329,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-pagination/svg-pagination.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-panel",
+      "components": [
+        {
+          "tag": "svg-panel",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-panel.entry.js",
+          "outputs": [
+            "dist/svg/svg-panel.entry.js",
+            "www/build/svg/svg-panel.entry.js"
+          ],
+          "size": 304,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-panel/svg-panel.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-progress-indicator",
+      "components": [
+        {
+          "tag": "svg-progress-indicator",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-progress-indicator.entry.js",
+          "outputs": [
+            "dist/svg/svg-progress-indicator.entry.js",
+            "www/build/svg/svg-progress-indicator.entry.js"
+          ],
+          "size": 366,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-progress-indicator/svg-progress-indicator.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-slider",
+      "components": [
+        {
+          "tag": "svg-slider",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-slider.entry.js",
+          "outputs": [
+            "dist/svg/svg-slider.entry.js",
+            "www/build/svg/svg-slider.entry.js"
+          ],
+          "size": 309,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-slider/svg-slider.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-sparkline",
+      "components": [
+        {
+          "tag": "svg-sparkline",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-sparkline.entry.js",
+          "outputs": [
+            "dist/svg/svg-sparkline.entry.js",
+            "www/build/svg/svg-sparkline.entry.js"
+          ],
+          "size": 324,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-sparkline/svg-sparkline.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-spinner",
+      "components": [
+        {
+          "tag": "svg-spinner",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-spinner.entry.js",
+          "outputs": [
+            "dist/svg/svg-spinner.entry.js",
+            "www/build/svg/svg-spinner.entry.js"
+          ],
+          "size": 314,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-spinner/svg-spinner.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-stepper",
+      "components": [
+        {
+          "tag": "svg-stepper",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-stepper.entry.js",
+          "outputs": [
+            "dist/svg/svg-stepper.entry.js",
+            "www/build/svg/svg-stepper.entry.js"
+          ],
+          "size": 314,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-stepper/svg-stepper.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-tab",
+      "components": [
+        {
+          "tag": "svg-tab",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-tab.entry.js",
+          "outputs": [
+            "dist/svg/svg-tab.entry.js",
+            "www/build/svg/svg-tab.entry.js"
+          ],
+          "size": 294,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-tab/svg-tab.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-tab-container",
+      "components": [
+        {
+          "tag": "svg-tab-container",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-tab-container.entry.js",
+          "outputs": [
+            "dist/svg/svg-tab-container.entry.js",
+            "www/build/svg/svg-tab-container.entry.js"
+          ],
+          "size": 341,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-tab-container/svg-tab-container.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-text-area",
+      "components": [
+        {
+          "tag": "svg-text-area",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-text-area.entry.js",
+          "outputs": [
+            "dist/svg/svg-text-area.entry.js",
+            "www/build/svg/svg-text-area.entry.js"
+          ],
+          "size": 321,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-text-area/svg-text-area.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-text-box",
+      "components": [
+        {
+          "tag": "svg-text-box",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-text-box.entry.js",
+          "outputs": [
+            "dist/svg/svg-text-box.entry.js",
+            "www/build/svg/svg-text-box.entry.js"
+          ],
+          "size": 316,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-text-box/svg-text-box.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-time-picker",
+      "components": [
+        {
+          "tag": "svg-time-picker",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-time-picker.entry.js",
+          "outputs": [
+            "dist/svg/svg-time-picker.entry.js",
+            "www/build/svg/svg-time-picker.entry.js"
+          ],
+          "size": 331,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-time-picker/svg-time-picker.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
+    },
+    {
+      "entryId": "entry.svg-timeline",
+      "components": [
+        {
+          "tag": "svg-timeline",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-timeline.entry.js",
+          "outputs": [
+            "dist/svg/svg-timeline.entry.js",
+            "www/build/svg/svg-timeline.entry.js"
+          ],
+          "size": 319,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-timeline/svg-timeline.js"
       ],
       "encapsulations": [
         "none"
@@ -179,10 +1336,97 @@
       "encapsulations": [
         "none"
       ]
+    },
+    {
+      "entryId": "entry.svg-toolbar",
+      "components": [
+        {
+          "tag": "svg-toolbar",
+          "dependencies": [],
+          "dependencyOf": []
+        }
+      ],
+      "bundles": [
+        {
+          "fileName": "svg-toolbar.entry.js",
+          "outputs": [
+            "dist/svg/svg-toolbar.entry.js",
+            "www/build/svg/svg-toolbar.entry.js"
+          ],
+          "size": 314,
+          "target": "es2017"
+        }
+      ],
+      "inputs": [
+        "src/components/svg-toolbar/svg-toolbar.js"
+      ],
+      "encapsulations": [
+        "none"
+      ]
     }
   ],
   "rollupResults": {
     "modules": [
+      {
+        "id": "entry.svg-label.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgLabel"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-label/svg-label.js",
+            "exports": [
+              "SvgLabel"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-label.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-toolbar.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgToolbar"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-toolbar/svg-toolbar.js",
+            "exports": [
+              "SvgToolbar"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-toolbar.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-layout-grid.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgLayoutGrid"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-layout-grid/svg-layout-grid.js",
+            "exports": [
+              "SvgLayoutGrid"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-layout-grid.js",
+            "exports": []
+          }
+        ]
+      },
       {
         "id": "entry.svg-app-container.js",
         "isEntry": true,
@@ -192,33 +1436,153 @@
         ],
         "modules": [
           {
-            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-app-container/svg-app-container.js",
+            "filename": "/sandbox/src/components/svg-app-container/svg-app-container.js",
             "exports": [
               "SvgAppContainer"
             ]
           },
           {
-            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-app-container.js",
+            "filename": "/sandbox/src/entry.svg-app-container.js",
             "exports": []
           }
         ]
       },
       {
-        "id": "entry.svg-button.js",
+        "id": "entry.svg-list.js",
         "isEntry": true,
         "imports": [],
         "exports": [
-          "SvgButton"
+          "SvgList"
         ],
         "modules": [
           {
-            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-button/svg-button.js",
+            "filename": "/sandbox/src/components/svg-list/svg-list.js",
             "exports": [
-              "SvgButton"
+              "SvgList"
             ]
           },
           {
-            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-button.js",
+            "filename": "/sandbox/src/entry.svg-list.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-breadcrumb-item.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgBreadcrumbItem"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-breadcrumb-item/svg-breadcrumb-item.js",
+            "exports": [
+              "SvgBreadcrumbItem"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-breadcrumb-item.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-list-item.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgListItem"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-list-item/svg-list-item.js",
+            "exports": [
+              "SvgListItem"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-list-item.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-card.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgCard"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-card/svg-card.js",
+            "exports": [
+              "SvgCard"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-card.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-menu.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgMenu"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-menu/svg-menu.js",
+            "exports": [
+              "SvgMenu"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-menu.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-check-box.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgCheckBox"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-check-box/svg-check-box.js",
+            "exports": [
+              "SvgCheckBox"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-check-box.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-menu-item.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgMenuItem"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-menu-item/svg-menu-item.js",
+            "exports": [
+              "SvgMenuItem"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-menu-item.js",
             "exports": []
           }
         ]
@@ -232,33 +1596,433 @@
         ],
         "modules": [
           {
-            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-component-group/svg-component-group.js",
+            "filename": "/sandbox/src/components/svg-component-group/svg-component-group.js",
             "exports": [
               "SvgComponentGroup"
             ]
           },
           {
-            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-component-group.js",
+            "filename": "/sandbox/src/entry.svg-component-group.js",
             "exports": []
           }
         ]
       },
       {
-        "id": "entry.svg-label.js",
+        "id": "entry.svg-pagination.js",
         "isEntry": true,
         "imports": [],
         "exports": [
-          "SvgLabel"
+          "SvgPagination"
         ],
         "modules": [
           {
-            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-label/svg-label.js",
+            "filename": "/sandbox/src/components/svg-pagination/svg-pagination.js",
             "exports": [
-              "SvgLabel"
+              "SvgPagination"
             ]
           },
           {
-            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-label.js",
+            "filename": "/sandbox/src/entry.svg-pagination.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-date-picker.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgDatePicker"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-date-picker/svg-date-picker.js",
+            "exports": [
+              "SvgDatePicker"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-date-picker.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-panel.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgPanel"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-panel/svg-panel.js",
+            "exports": [
+              "SvgPanel"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-panel.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-dialog.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgDialog"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-dialog/svg-dialog.js",
+            "exports": [
+              "SvgDialog"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-dialog.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-progress-indicator.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgProgressIndicator"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-progress-indicator/svg-progress-indicator.js",
+            "exports": [
+              "SvgProgressIndicator"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-progress-indicator.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-drop-down-menu.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgDropDownMenu"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-drop-down-menu/svg-drop-down-menu.js",
+            "exports": [
+              "SvgDropDownMenu"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-drop-down-menu.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-slider.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgSlider"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-slider/svg-slider.js",
+            "exports": [
+              "SvgSlider"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-slider.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-footer.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgFooter"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-footer/svg-footer.js",
+            "exports": [
+              "SvgFooter"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-footer.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-sparkline.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgSparkline"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-sparkline/svg-sparkline.js",
+            "exports": [
+              "SvgSparkline"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-sparkline.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-form-section.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgFormSection"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-form-section/svg-form-section.js",
+            "exports": [
+              "SvgFormSection"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-form-section.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-spinner.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgSpinner"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-spinner/svg-spinner.js",
+            "exports": [
+              "SvgSpinner"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-spinner.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-indicator-light.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgIndicatorLight"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-indicator-light/svg-indicator-light.js",
+            "exports": [
+              "SvgIndicatorLight"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-indicator-light.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-stepper.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgStepper"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-stepper/svg-stepper.js",
+            "exports": [
+              "SvgStepper"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-stepper.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-button.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgButton"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-button/svg-button.js",
+            "exports": [
+              "SvgButton"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-button.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-tab.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgTab"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-tab/svg-tab.js",
+            "exports": [
+              "SvgTab"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-tab.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-combo-box.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgComboBox"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-combo-box/svg-combo-box.js",
+            "exports": [
+              "SvgComboBox"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-combo-box.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-tab-container.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgTabContainer"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-tab-container/svg-tab-container.js",
+            "exports": [
+              "SvgTabContainer"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-tab-container.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-dial.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgDial"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-dial/svg-dial.js",
+            "exports": [
+              "SvgDial"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-dial.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-text-area.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgTextArea"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-text-area/svg-text-area.js",
+            "exports": [
+              "SvgTextArea"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-text-area.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-expansion-panel.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgExpansionPanel"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-expansion-panel/svg-expansion-panel.js",
+            "exports": [
+              "SvgExpansionPanel"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-expansion-panel.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-header.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgHeader"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-header/svg-header.js",
+            "exports": [
+              "SvgHeader"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-header.js",
             "exports": []
           }
         ]
@@ -272,13 +2036,173 @@
         ],
         "modules": [
           {
-            "filename": "/mnt/c/code/components/svg-comp-lib/src/components/svg-toggle/svg-toggle.js",
+            "filename": "/sandbox/src/components/svg-toggle/svg-toggle.js",
             "exports": [
               "SvgToggle"
             ]
           },
           {
-            "filename": "/mnt/c/code/components/svg-comp-lib/src/entry.svg-toggle.js",
+            "filename": "/sandbox/src/entry.svg-toggle.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-timeline.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgTimeline"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-timeline/svg-timeline.js",
+            "exports": [
+              "SvgTimeline"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-timeline.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-time-picker.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgTimePicker"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-time-picker/svg-time-picker.js",
+            "exports": [
+              "SvgTimePicker"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-time-picker.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-text-box.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgTextBox"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-text-box/svg-text-box.js",
+            "exports": [
+              "SvgTextBox"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-text-box.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-breadcrumb-container.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgBreadcrumbContainer"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-breadcrumb-container/svg-breadcrumb-container.js",
+            "exports": [
+              "SvgBreadcrumbContainer"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-breadcrumb-container.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-form-container.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgFormContainer"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-form-container/svg-form-container.js",
+            "exports": [
+              "SvgFormContainer"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-form-container.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-divider.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgDivider"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-divider/svg-divider.js",
+            "exports": [
+              "SvgDivider"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-divider.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-data-grid.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgDataGrid"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-data-grid/svg-data-grid.js",
+            "exports": [
+              "SvgDataGrid"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-data-grid.js",
+            "exports": []
+          }
+        ]
+      },
+      {
+        "id": "entry.svg-carousel.js",
+        "isEntry": true,
+        "imports": [],
+        "exports": [
+          "SvgCarousel"
+        ],
+        "modules": [
+          {
+            "filename": "/sandbox/src/components/svg-carousel/svg-carousel.js",
+            "exports": [
+              "SvgCarousel"
+            ]
+          },
+          {
+            "filename": "/sandbox/src/entry.svg-carousel.js",
             "exports": []
           }
         ]
@@ -288,10 +2212,47 @@
   "sourceGraph": {
     "src/common/base.ts": [],
     "src/components/svg-app-container/svg-app-container.tsx": [],
+    "src/components/svg-breadcrumb-container/svg-breadcrumb-container.tsx": [],
+    "src/components/svg-breadcrumb-item/svg-breadcrumb-item.tsx": [],
     "src/components/svg-button/svg-button.tsx": [],
+    "src/components/svg-card/svg-card.tsx": [],
+    "src/components/svg-carousel/svg-carousel.tsx": [],
+    "src/components/svg-check-box/svg-check-box.tsx": [],
+    "src/components/svg-combo-box/svg-combo-box.tsx": [],
     "src/components/svg-component-group/svg-component-group.tsx": [],
+    "src/components/svg-data-grid/svg-data-grid.tsx": [],
+    "src/components/svg-date-picker/svg-date-picker.tsx": [],
+    "src/components/svg-dial/svg-dial.tsx": [],
+    "src/components/svg-dialog/svg-dialog.tsx": [],
+    "src/components/svg-divider/svg-divider.tsx": [],
+    "src/components/svg-drop-down-menu/svg-drop-down-menu.tsx": [],
+    "src/components/svg-expansion-panel/svg-expansion-panel.tsx": [],
+    "src/components/svg-footer/svg-footer.tsx": [],
+    "src/components/svg-form-container/svg-form-container.tsx": [],
+    "src/components/svg-form-section/svg-form-section.tsx": [],
+    "src/components/svg-header/svg-header.tsx": [],
+    "src/components/svg-indicator-light/svg-indicator-light.tsx": [],
     "src/components/svg-label/svg-label.tsx": [],
+    "src/components/svg-layout-grid/svg-layout-grid.tsx": [],
+    "src/components/svg-list-item/svg-list-item.tsx": [],
+    "src/components/svg-list/svg-list.tsx": [],
+    "src/components/svg-menu-item/svg-menu-item.tsx": [],
+    "src/components/svg-menu/svg-menu.tsx": [],
+    "src/components/svg-pagination/svg-pagination.tsx": [],
+    "src/components/svg-panel/svg-panel.tsx": [],
+    "src/components/svg-progress-indicator/svg-progress-indicator.tsx": [],
+    "src/components/svg-slider/svg-slider.tsx": [],
+    "src/components/svg-sparkline/svg-sparkline.tsx": [],
+    "src/components/svg-spinner/svg-spinner.tsx": [],
+    "src/components/svg-stepper/svg-stepper.tsx": [],
+    "src/components/svg-tab-container/svg-tab-container.tsx": [],
+    "src/components/svg-tab/svg-tab.tsx": [],
+    "src/components/svg-text-area/svg-text-area.tsx": [],
+    "src/components/svg-text-box/svg-text-box.tsx": [],
+    "src/components/svg-time-picker/svg-time-picker.tsx": [],
+    "src/components/svg-timeline/svg-timeline.tsx": [],
     "src/components/svg-toggle/svg-toggle.tsx": [],
+    "src/components/svg-toolbar/svg-toolbar.tsx": [],
     "src/globals/app.ts": [],
     "src/utils/utils.spec.ts": [
       "src/utils/utils"

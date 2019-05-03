@@ -3,7 +3,6 @@ import { Component, Element, Method, Prop, State, Watch } from '@stencil/core';
 @Component({
   tag: 'svg-toggle',
   styleUrl: 'svg-toggle.css',
-  shadow: false,
 })
 export class SvgToggle {
   private svgRoot: SVGGraphicsElement;
@@ -41,6 +40,8 @@ export class SvgToggle {
   @Watch('isSelected') stateHandler() {
     if (this.isSelected) {
       this.toggleIndicator.classList.add('selected-state');
+
+      console.log(this.toggleIndicator.attributes);
     } else {
       this.toggleIndicator.classList.remove('selected-state');
     }
@@ -49,7 +50,6 @@ export class SvgToggle {
   componentWillLoad() {}
   componentDidLoad() {
     this.registerComponent();
-    console.log(this.svgRoot.children.length);
 
     // this.svgRoot.innerHTML = this.toggleContainerDefinition + this.toggleIndicatorDefinition;
     // indicator.this.svgElement.appendChild(this.toggleIndicatorDefinition);
@@ -59,7 +59,7 @@ export class SvgToggle {
 
   handleClick(e?: any) {
     if (e) {
-      console.log(e);
+      // console.log(e);
     }
     this.isSelected = !this.isSelected;
   }
@@ -83,10 +83,8 @@ export class SvgToggle {
         ref={(el) => (this.svgRoot = el as SVGGraphicsElement)}
       >
         <defs>
-          <rect ry="50" rx="50" height="100" width="200" id="toggleContainer" />
-          <circle r="45" cx="50" cy="50" id="toggleIndicator" />
-          <filter id="white-glow" x="-5000%" y="-5000%" width="10000%" height="10000%">
-            <feFlood result="flood" flood-color="#ffffff" flood-opacity="1" />
+          <filter id="yellow-glow" x="-5000%" y="-5000%" width="10000%" height="10000%">
+            <feFlood result="flood" flood-color="yellow" flood-opacity="1" />
             <feComposite in="flood" result="mask" in2="SourceGraphic" operator="in" />
             <feMorphology in="mask" result="dilated" operator="dilate" radius="2" />
             <feGaussianBlur in="dilated" result="blurred" stdDeviation="5" />
@@ -96,11 +94,14 @@ export class SvgToggle {
             </feMerge>
           </filter>
         </defs>
-        <g ref={(el) => (this.toggleGroup = el as SVGGraphicsElement)}>
+        <g>
           <use
-            href={this.toggleContainerUrl ? this.toggleContainerUrl : '#toggleContainer'}
+            ref={(el) => (this.toggleGroup = el as SVGGraphicsElement)}
+            href={this.toggleContainerUrl ? this.toggleContainerUrl : 'url(assetss/baseDefs.svg#toggleContainer)'}
             class="svg-toggle-container"
           />
+        </g>
+        <g>
           <use
             ref={(el) => (this.toggleIndicator = el as SVGGraphicsElement)}
             href={this.toggleIndicatorUrl ? this.toggleIndicatorUrl : '#toggleIndicator'}

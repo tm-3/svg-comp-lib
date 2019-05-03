@@ -15,9 +15,12 @@
       }
 
       .toggle {
-        --svg-height: 75px;
+        /* --svg-toggle-indicator-filter: url('#white-glow'); */
+        --svg-height: 50px;
         --svg-toggle-indicator-color: rgb(221, 213, 203);
         --svg-toggle-container-color: rgb(14, 14, 41);
+        --svg-toggle-indicator-selected-color: red;
+        
       }
 
       .svg-defs {
@@ -48,6 +51,7 @@
     </style>
   </head>
   <body>
+    <!-- <svg-definitions></svg-definitions> -->
     <svg class="svg-defs">
       <defs>
         <rect height="100" width="200" id="altToggleContainer" />
@@ -57,11 +61,12 @@
           id="starIndicator"
           transform="scale(.7) translate(5 15)"
         ></path>
-        <!--
-        <rect height="100" width="200" id="toggleContainer" />
+        
+        <!-- <rect height="100" width="200" id="toggleContainer" />
         <rect height="90" width="90" x="5" y="5" id="toggleIndicator" /> -->
       </defs>
     </svg>
+
     <div class="wrapper">
       <svg-toggle
         class="toggle"

@@ -15,14 +15,129 @@ export namespace Components {
   interface SvgAppContainer {}
   interface SvgAppContainerAttributes extends StencilHTMLAttributes {}
 
+  interface SvgBreadcrumbContainer {}
+  interface SvgBreadcrumbContainerAttributes extends StencilHTMLAttributes {}
+
+  interface SvgBreadcrumbItem {}
+  interface SvgBreadcrumbItemAttributes extends StencilHTMLAttributes {}
+
   interface SvgButton {}
   interface SvgButtonAttributes extends StencilHTMLAttributes {}
+
+  interface SvgCard {}
+  interface SvgCardAttributes extends StencilHTMLAttributes {}
+
+  interface SvgCarousel {}
+  interface SvgCarouselAttributes extends StencilHTMLAttributes {}
+
+  interface SvgCheckBox {
+    'viewBox': string;
+  }
+  interface SvgCheckBoxAttributes extends StencilHTMLAttributes {
+    'viewBox'?: string;
+  }
+
+  interface SvgComboBox {}
+  interface SvgComboBoxAttributes extends StencilHTMLAttributes {}
 
   interface SvgComponentGroup {}
   interface SvgComponentGroupAttributes extends StencilHTMLAttributes {}
 
+  interface SvgDataGrid {}
+  interface SvgDataGridAttributes extends StencilHTMLAttributes {}
+
+  interface SvgDatePicker {}
+  interface SvgDatePickerAttributes extends StencilHTMLAttributes {}
+
+  interface SvgDefinitions {}
+  interface SvgDefinitionsAttributes extends StencilHTMLAttributes {}
+
+  interface SvgDial {}
+  interface SvgDialAttributes extends StencilHTMLAttributes {}
+
+  interface SvgDialog {}
+  interface SvgDialogAttributes extends StencilHTMLAttributes {}
+
+  interface SvgDivider {}
+  interface SvgDividerAttributes extends StencilHTMLAttributes {}
+
+  interface SvgDropDownMenu {}
+  interface SvgDropDownMenuAttributes extends StencilHTMLAttributes {}
+
+  interface SvgExpansionPanel {}
+  interface SvgExpansionPanelAttributes extends StencilHTMLAttributes {}
+
+  interface SvgFooter {}
+  interface SvgFooterAttributes extends StencilHTMLAttributes {}
+
+  interface SvgFormContainer {}
+  interface SvgFormContainerAttributes extends StencilHTMLAttributes {}
+
+  interface SvgFormSection {}
+  interface SvgFormSectionAttributes extends StencilHTMLAttributes {}
+
+  interface SvgHeader {}
+  interface SvgHeaderAttributes extends StencilHTMLAttributes {}
+
+  interface SvgIndicatorLight {}
+  interface SvgIndicatorLightAttributes extends StencilHTMLAttributes {}
+
   interface SvgLabel {}
   interface SvgLabelAttributes extends StencilHTMLAttributes {}
+
+  interface SvgLayoutGrid {}
+  interface SvgLayoutGridAttributes extends StencilHTMLAttributes {}
+
+  interface SvgListItem {}
+  interface SvgListItemAttributes extends StencilHTMLAttributes {}
+
+  interface SvgList {}
+  interface SvgListAttributes extends StencilHTMLAttributes {}
+
+  interface SvgMenuItem {}
+  interface SvgMenuItemAttributes extends StencilHTMLAttributes {}
+
+  interface SvgMenu {}
+  interface SvgMenuAttributes extends StencilHTMLAttributes {}
+
+  interface SvgPagination {}
+  interface SvgPaginationAttributes extends StencilHTMLAttributes {}
+
+  interface SvgPanel {}
+  interface SvgPanelAttributes extends StencilHTMLAttributes {}
+
+  interface SvgProgressIndicator {}
+  interface SvgProgressIndicatorAttributes extends StencilHTMLAttributes {}
+
+  interface SvgSlider {}
+  interface SvgSliderAttributes extends StencilHTMLAttributes {}
+
+  interface SvgSparkline {}
+  interface SvgSparklineAttributes extends StencilHTMLAttributes {}
+
+  interface SvgSpinner {}
+  interface SvgSpinnerAttributes extends StencilHTMLAttributes {}
+
+  interface SvgStepper {}
+  interface SvgStepperAttributes extends StencilHTMLAttributes {}
+
+  interface SvgTabContainer {}
+  interface SvgTabContainerAttributes extends StencilHTMLAttributes {}
+
+  interface SvgTab {}
+  interface SvgTabAttributes extends StencilHTMLAttributes {}
+
+  interface SvgTextArea {}
+  interface SvgTextAreaAttributes extends StencilHTMLAttributes {}
+
+  interface SvgTextBox {}
+  interface SvgTextBoxAttributes extends StencilHTMLAttributes {}
+
+  interface SvgTimePicker {}
+  interface SvgTimePickerAttributes extends StencilHTMLAttributes {}
+
+  interface SvgTimeline {}
+  interface SvgTimelineAttributes extends StencilHTMLAttributes {}
 
   interface SvgToggle {
     'label': string;
@@ -66,23 +181,102 @@ export namespace Components {
     */
     'viewBox'?: string;
   }
+
+  interface SvgToolbar {}
+  interface SvgToolbarAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
   interface StencilElementInterfaces {
     'SvgAppContainer': Components.SvgAppContainer;
+    'SvgBreadcrumbContainer': Components.SvgBreadcrumbContainer;
+    'SvgBreadcrumbItem': Components.SvgBreadcrumbItem;
     'SvgButton': Components.SvgButton;
+    'SvgCard': Components.SvgCard;
+    'SvgCarousel': Components.SvgCarousel;
+    'SvgCheckBox': Components.SvgCheckBox;
+    'SvgComboBox': Components.SvgComboBox;
     'SvgComponentGroup': Components.SvgComponentGroup;
+    'SvgDataGrid': Components.SvgDataGrid;
+    'SvgDatePicker': Components.SvgDatePicker;
+    'SvgDefinitions': Components.SvgDefinitions;
+    'SvgDial': Components.SvgDial;
+    'SvgDialog': Components.SvgDialog;
+    'SvgDivider': Components.SvgDivider;
+    'SvgDropDownMenu': Components.SvgDropDownMenu;
+    'SvgExpansionPanel': Components.SvgExpansionPanel;
+    'SvgFooter': Components.SvgFooter;
+    'SvgFormContainer': Components.SvgFormContainer;
+    'SvgFormSection': Components.SvgFormSection;
+    'SvgHeader': Components.SvgHeader;
+    'SvgIndicatorLight': Components.SvgIndicatorLight;
     'SvgLabel': Components.SvgLabel;
+    'SvgLayoutGrid': Components.SvgLayoutGrid;
+    'SvgListItem': Components.SvgListItem;
+    'SvgList': Components.SvgList;
+    'SvgMenuItem': Components.SvgMenuItem;
+    'SvgMenu': Components.SvgMenu;
+    'SvgPagination': Components.SvgPagination;
+    'SvgPanel': Components.SvgPanel;
+    'SvgProgressIndicator': Components.SvgProgressIndicator;
+    'SvgSlider': Components.SvgSlider;
+    'SvgSparkline': Components.SvgSparkline;
+    'SvgSpinner': Components.SvgSpinner;
+    'SvgStepper': Components.SvgStepper;
+    'SvgTabContainer': Components.SvgTabContainer;
+    'SvgTab': Components.SvgTab;
+    'SvgTextArea': Components.SvgTextArea;
+    'SvgTextBox': Components.SvgTextBox;
+    'SvgTimePicker': Components.SvgTimePicker;
+    'SvgTimeline': Components.SvgTimeline;
     'SvgToggle': Components.SvgToggle;
+    'SvgToolbar': Components.SvgToolbar;
   }
 
   interface StencilIntrinsicElements {
     'svg-app-container': Components.SvgAppContainerAttributes;
+    'svg-breadcrumb-container': Components.SvgBreadcrumbContainerAttributes;
+    'svg-breadcrumb-item': Components.SvgBreadcrumbItemAttributes;
     'svg-button': Components.SvgButtonAttributes;
+    'svg-card': Components.SvgCardAttributes;
+    'svg-carousel': Components.SvgCarouselAttributes;
+    'svg-check-box': Components.SvgCheckBoxAttributes;
+    'svg-combo-box': Components.SvgComboBoxAttributes;
     'svg-component-group': Components.SvgComponentGroupAttributes;
+    'svg-data-grid': Components.SvgDataGridAttributes;
+    'svg-date-picker': Components.SvgDatePickerAttributes;
+    'svg-definitions': Components.SvgDefinitionsAttributes;
+    'svg-dial': Components.SvgDialAttributes;
+    'svg-dialog': Components.SvgDialogAttributes;
+    'svg-divider': Components.SvgDividerAttributes;
+    'svg-drop-down-menu': Components.SvgDropDownMenuAttributes;
+    'svg-expansion-panel': Components.SvgExpansionPanelAttributes;
+    'svg-footer': Components.SvgFooterAttributes;
+    'svg-form-container': Components.SvgFormContainerAttributes;
+    'svg-form-section': Components.SvgFormSectionAttributes;
+    'svg-header': Components.SvgHeaderAttributes;
+    'svg-indicator-light': Components.SvgIndicatorLightAttributes;
     'svg-label': Components.SvgLabelAttributes;
+    'svg-layout-grid': Components.SvgLayoutGridAttributes;
+    'svg-list-item': Components.SvgListItemAttributes;
+    'svg-list': Components.SvgListAttributes;
+    'svg-menu-item': Components.SvgMenuItemAttributes;
+    'svg-menu': Components.SvgMenuAttributes;
+    'svg-pagination': Components.SvgPaginationAttributes;
+    'svg-panel': Components.SvgPanelAttributes;
+    'svg-progress-indicator': Components.SvgProgressIndicatorAttributes;
+    'svg-slider': Components.SvgSliderAttributes;
+    'svg-sparkline': Components.SvgSparklineAttributes;
+    'svg-spinner': Components.SvgSpinnerAttributes;
+    'svg-stepper': Components.SvgStepperAttributes;
+    'svg-tab-container': Components.SvgTabContainerAttributes;
+    'svg-tab': Components.SvgTabAttributes;
+    'svg-text-area': Components.SvgTextAreaAttributes;
+    'svg-text-box': Components.SvgTextBoxAttributes;
+    'svg-time-picker': Components.SvgTimePickerAttributes;
+    'svg-timeline': Components.SvgTimelineAttributes;
     'svg-toggle': Components.SvgToggleAttributes;
+    'svg-toolbar': Components.SvgToolbarAttributes;
   }
 
 
@@ -92,10 +286,46 @@ declare global {
     new (): HTMLSvgAppContainerElement;
   };
 
+  interface HTMLSvgBreadcrumbContainerElement extends Components.SvgBreadcrumbContainer, HTMLStencilElement {}
+  var HTMLSvgBreadcrumbContainerElement: {
+    prototype: HTMLSvgBreadcrumbContainerElement;
+    new (): HTMLSvgBreadcrumbContainerElement;
+  };
+
+  interface HTMLSvgBreadcrumbItemElement extends Components.SvgBreadcrumbItem, HTMLStencilElement {}
+  var HTMLSvgBreadcrumbItemElement: {
+    prototype: HTMLSvgBreadcrumbItemElement;
+    new (): HTMLSvgBreadcrumbItemElement;
+  };
+
   interface HTMLSvgButtonElement extends Components.SvgButton, HTMLStencilElement {}
   var HTMLSvgButtonElement: {
     prototype: HTMLSvgButtonElement;
     new (): HTMLSvgButtonElement;
+  };
+
+  interface HTMLSvgCardElement extends Components.SvgCard, HTMLStencilElement {}
+  var HTMLSvgCardElement: {
+    prototype: HTMLSvgCardElement;
+    new (): HTMLSvgCardElement;
+  };
+
+  interface HTMLSvgCarouselElement extends Components.SvgCarousel, HTMLStencilElement {}
+  var HTMLSvgCarouselElement: {
+    prototype: HTMLSvgCarouselElement;
+    new (): HTMLSvgCarouselElement;
+  };
+
+  interface HTMLSvgCheckBoxElement extends Components.SvgCheckBox, HTMLStencilElement {}
+  var HTMLSvgCheckBoxElement: {
+    prototype: HTMLSvgCheckBoxElement;
+    new (): HTMLSvgCheckBoxElement;
+  };
+
+  interface HTMLSvgComboBoxElement extends Components.SvgComboBox, HTMLStencilElement {}
+  var HTMLSvgComboBoxElement: {
+    prototype: HTMLSvgComboBoxElement;
+    new (): HTMLSvgComboBoxElement;
   };
 
   interface HTMLSvgComponentGroupElement extends Components.SvgComponentGroup, HTMLStencilElement {}
@@ -104,10 +334,196 @@ declare global {
     new (): HTMLSvgComponentGroupElement;
   };
 
+  interface HTMLSvgDataGridElement extends Components.SvgDataGrid, HTMLStencilElement {}
+  var HTMLSvgDataGridElement: {
+    prototype: HTMLSvgDataGridElement;
+    new (): HTMLSvgDataGridElement;
+  };
+
+  interface HTMLSvgDatePickerElement extends Components.SvgDatePicker, HTMLStencilElement {}
+  var HTMLSvgDatePickerElement: {
+    prototype: HTMLSvgDatePickerElement;
+    new (): HTMLSvgDatePickerElement;
+  };
+
+  interface HTMLSvgDefinitionsElement extends Components.SvgDefinitions, HTMLStencilElement {}
+  var HTMLSvgDefinitionsElement: {
+    prototype: HTMLSvgDefinitionsElement;
+    new (): HTMLSvgDefinitionsElement;
+  };
+
+  interface HTMLSvgDialElement extends Components.SvgDial, HTMLStencilElement {}
+  var HTMLSvgDialElement: {
+    prototype: HTMLSvgDialElement;
+    new (): HTMLSvgDialElement;
+  };
+
+  interface HTMLSvgDialogElement extends Components.SvgDialog, HTMLStencilElement {}
+  var HTMLSvgDialogElement: {
+    prototype: HTMLSvgDialogElement;
+    new (): HTMLSvgDialogElement;
+  };
+
+  interface HTMLSvgDividerElement extends Components.SvgDivider, HTMLStencilElement {}
+  var HTMLSvgDividerElement: {
+    prototype: HTMLSvgDividerElement;
+    new (): HTMLSvgDividerElement;
+  };
+
+  interface HTMLSvgDropDownMenuElement extends Components.SvgDropDownMenu, HTMLStencilElement {}
+  var HTMLSvgDropDownMenuElement: {
+    prototype: HTMLSvgDropDownMenuElement;
+    new (): HTMLSvgDropDownMenuElement;
+  };
+
+  interface HTMLSvgExpansionPanelElement extends Components.SvgExpansionPanel, HTMLStencilElement {}
+  var HTMLSvgExpansionPanelElement: {
+    prototype: HTMLSvgExpansionPanelElement;
+    new (): HTMLSvgExpansionPanelElement;
+  };
+
+  interface HTMLSvgFooterElement extends Components.SvgFooter, HTMLStencilElement {}
+  var HTMLSvgFooterElement: {
+    prototype: HTMLSvgFooterElement;
+    new (): HTMLSvgFooterElement;
+  };
+
+  interface HTMLSvgFormContainerElement extends Components.SvgFormContainer, HTMLStencilElement {}
+  var HTMLSvgFormContainerElement: {
+    prototype: HTMLSvgFormContainerElement;
+    new (): HTMLSvgFormContainerElement;
+  };
+
+  interface HTMLSvgFormSectionElement extends Components.SvgFormSection, HTMLStencilElement {}
+  var HTMLSvgFormSectionElement: {
+    prototype: HTMLSvgFormSectionElement;
+    new (): HTMLSvgFormSectionElement;
+  };
+
+  interface HTMLSvgHeaderElement extends Components.SvgHeader, HTMLStencilElement {}
+  var HTMLSvgHeaderElement: {
+    prototype: HTMLSvgHeaderElement;
+    new (): HTMLSvgHeaderElement;
+  };
+
+  interface HTMLSvgIndicatorLightElement extends Components.SvgIndicatorLight, HTMLStencilElement {}
+  var HTMLSvgIndicatorLightElement: {
+    prototype: HTMLSvgIndicatorLightElement;
+    new (): HTMLSvgIndicatorLightElement;
+  };
+
   interface HTMLSvgLabelElement extends Components.SvgLabel, HTMLStencilElement {}
   var HTMLSvgLabelElement: {
     prototype: HTMLSvgLabelElement;
     new (): HTMLSvgLabelElement;
+  };
+
+  interface HTMLSvgLayoutGridElement extends Components.SvgLayoutGrid, HTMLStencilElement {}
+  var HTMLSvgLayoutGridElement: {
+    prototype: HTMLSvgLayoutGridElement;
+    new (): HTMLSvgLayoutGridElement;
+  };
+
+  interface HTMLSvgListItemElement extends Components.SvgListItem, HTMLStencilElement {}
+  var HTMLSvgListItemElement: {
+    prototype: HTMLSvgListItemElement;
+    new (): HTMLSvgListItemElement;
+  };
+
+  interface HTMLSvgListElement extends Components.SvgList, HTMLStencilElement {}
+  var HTMLSvgListElement: {
+    prototype: HTMLSvgListElement;
+    new (): HTMLSvgListElement;
+  };
+
+  interface HTMLSvgMenuItemElement extends Components.SvgMenuItem, HTMLStencilElement {}
+  var HTMLSvgMenuItemElement: {
+    prototype: HTMLSvgMenuItemElement;
+    new (): HTMLSvgMenuItemElement;
+  };
+
+  interface HTMLSvgMenuElement extends Components.SvgMenu, HTMLStencilElement {}
+  var HTMLSvgMenuElement: {
+    prototype: HTMLSvgMenuElement;
+    new (): HTMLSvgMenuElement;
+  };
+
+  interface HTMLSvgPaginationElement extends Components.SvgPagination, HTMLStencilElement {}
+  var HTMLSvgPaginationElement: {
+    prototype: HTMLSvgPaginationElement;
+    new (): HTMLSvgPaginationElement;
+  };
+
+  interface HTMLSvgPanelElement extends Components.SvgPanel, HTMLStencilElement {}
+  var HTMLSvgPanelElement: {
+    prototype: HTMLSvgPanelElement;
+    new (): HTMLSvgPanelElement;
+  };
+
+  interface HTMLSvgProgressIndicatorElement extends Components.SvgProgressIndicator, HTMLStencilElement {}
+  var HTMLSvgProgressIndicatorElement: {
+    prototype: HTMLSvgProgressIndicatorElement;
+    new (): HTMLSvgProgressIndicatorElement;
+  };
+
+  interface HTMLSvgSliderElement extends Components.SvgSlider, HTMLStencilElement {}
+  var HTMLSvgSliderElement: {
+    prototype: HTMLSvgSliderElement;
+    new (): HTMLSvgSliderElement;
+  };
+
+  interface HTMLSvgSparklineElement extends Components.SvgSparkline, HTMLStencilElement {}
+  var HTMLSvgSparklineElement: {
+    prototype: HTMLSvgSparklineElement;
+    new (): HTMLSvgSparklineElement;
+  };
+
+  interface HTMLSvgSpinnerElement extends Components.SvgSpinner, HTMLStencilElement {}
+  var HTMLSvgSpinnerElement: {
+    prototype: HTMLSvgSpinnerElement;
+    new (): HTMLSvgSpinnerElement;
+  };
+
+  interface HTMLSvgStepperElement extends Components.SvgStepper, HTMLStencilElement {}
+  var HTMLSvgStepperElement: {
+    prototype: HTMLSvgStepperElement;
+    new (): HTMLSvgStepperElement;
+  };
+
+  interface HTMLSvgTabContainerElement extends Components.SvgTabContainer, HTMLStencilElement {}
+  var HTMLSvgTabContainerElement: {
+    prototype: HTMLSvgTabContainerElement;
+    new (): HTMLSvgTabContainerElement;
+  };
+
+  interface HTMLSvgTabElement extends Components.SvgTab, HTMLStencilElement {}
+  var HTMLSvgTabElement: {
+    prototype: HTMLSvgTabElement;
+    new (): HTMLSvgTabElement;
+  };
+
+  interface HTMLSvgTextAreaElement extends Components.SvgTextArea, HTMLStencilElement {}
+  var HTMLSvgTextAreaElement: {
+    prototype: HTMLSvgTextAreaElement;
+    new (): HTMLSvgTextAreaElement;
+  };
+
+  interface HTMLSvgTextBoxElement extends Components.SvgTextBox, HTMLStencilElement {}
+  var HTMLSvgTextBoxElement: {
+    prototype: HTMLSvgTextBoxElement;
+    new (): HTMLSvgTextBoxElement;
+  };
+
+  interface HTMLSvgTimePickerElement extends Components.SvgTimePicker, HTMLStencilElement {}
+  var HTMLSvgTimePickerElement: {
+    prototype: HTMLSvgTimePickerElement;
+    new (): HTMLSvgTimePickerElement;
+  };
+
+  interface HTMLSvgTimelineElement extends Components.SvgTimeline, HTMLStencilElement {}
+  var HTMLSvgTimelineElement: {
+    prototype: HTMLSvgTimelineElement;
+    new (): HTMLSvgTimelineElement;
   };
 
   interface HTMLSvgToggleElement extends Components.SvgToggle, HTMLStencilElement {}
@@ -116,20 +532,102 @@ declare global {
     new (): HTMLSvgToggleElement;
   };
 
+  interface HTMLSvgToolbarElement extends Components.SvgToolbar, HTMLStencilElement {}
+  var HTMLSvgToolbarElement: {
+    prototype: HTMLSvgToolbarElement;
+    new (): HTMLSvgToolbarElement;
+  };
+
   interface HTMLElementTagNameMap {
     'svg-app-container': HTMLSvgAppContainerElement
+    'svg-breadcrumb-container': HTMLSvgBreadcrumbContainerElement
+    'svg-breadcrumb-item': HTMLSvgBreadcrumbItemElement
     'svg-button': HTMLSvgButtonElement
+    'svg-card': HTMLSvgCardElement
+    'svg-carousel': HTMLSvgCarouselElement
+    'svg-check-box': HTMLSvgCheckBoxElement
+    'svg-combo-box': HTMLSvgComboBoxElement
     'svg-component-group': HTMLSvgComponentGroupElement
+    'svg-data-grid': HTMLSvgDataGridElement
+    'svg-date-picker': HTMLSvgDatePickerElement
+    'svg-definitions': HTMLSvgDefinitionsElement
+    'svg-dial': HTMLSvgDialElement
+    'svg-dialog': HTMLSvgDialogElement
+    'svg-divider': HTMLSvgDividerElement
+    'svg-drop-down-menu': HTMLSvgDropDownMenuElement
+    'svg-expansion-panel': HTMLSvgExpansionPanelElement
+    'svg-footer': HTMLSvgFooterElement
+    'svg-form-container': HTMLSvgFormContainerElement
+    'svg-form-section': HTMLSvgFormSectionElement
+    'svg-header': HTMLSvgHeaderElement
+    'svg-indicator-light': HTMLSvgIndicatorLightElement
     'svg-label': HTMLSvgLabelElement
+    'svg-layout-grid': HTMLSvgLayoutGridElement
+    'svg-list-item': HTMLSvgListItemElement
+    'svg-list': HTMLSvgListElement
+    'svg-menu-item': HTMLSvgMenuItemElement
+    'svg-menu': HTMLSvgMenuElement
+    'svg-pagination': HTMLSvgPaginationElement
+    'svg-panel': HTMLSvgPanelElement
+    'svg-progress-indicator': HTMLSvgProgressIndicatorElement
+    'svg-slider': HTMLSvgSliderElement
+    'svg-sparkline': HTMLSvgSparklineElement
+    'svg-spinner': HTMLSvgSpinnerElement
+    'svg-stepper': HTMLSvgStepperElement
+    'svg-tab-container': HTMLSvgTabContainerElement
+    'svg-tab': HTMLSvgTabElement
+    'svg-text-area': HTMLSvgTextAreaElement
+    'svg-text-box': HTMLSvgTextBoxElement
+    'svg-time-picker': HTMLSvgTimePickerElement
+    'svg-timeline': HTMLSvgTimelineElement
     'svg-toggle': HTMLSvgToggleElement
+    'svg-toolbar': HTMLSvgToolbarElement
   }
 
   interface ElementTagNameMap {
     'svg-app-container': HTMLSvgAppContainerElement;
+    'svg-breadcrumb-container': HTMLSvgBreadcrumbContainerElement;
+    'svg-breadcrumb-item': HTMLSvgBreadcrumbItemElement;
     'svg-button': HTMLSvgButtonElement;
+    'svg-card': HTMLSvgCardElement;
+    'svg-carousel': HTMLSvgCarouselElement;
+    'svg-check-box': HTMLSvgCheckBoxElement;
+    'svg-combo-box': HTMLSvgComboBoxElement;
     'svg-component-group': HTMLSvgComponentGroupElement;
+    'svg-data-grid': HTMLSvgDataGridElement;
+    'svg-date-picker': HTMLSvgDatePickerElement;
+    'svg-definitions': HTMLSvgDefinitionsElement;
+    'svg-dial': HTMLSvgDialElement;
+    'svg-dialog': HTMLSvgDialogElement;
+    'svg-divider': HTMLSvgDividerElement;
+    'svg-drop-down-menu': HTMLSvgDropDownMenuElement;
+    'svg-expansion-panel': HTMLSvgExpansionPanelElement;
+    'svg-footer': HTMLSvgFooterElement;
+    'svg-form-container': HTMLSvgFormContainerElement;
+    'svg-form-section': HTMLSvgFormSectionElement;
+    'svg-header': HTMLSvgHeaderElement;
+    'svg-indicator-light': HTMLSvgIndicatorLightElement;
     'svg-label': HTMLSvgLabelElement;
+    'svg-layout-grid': HTMLSvgLayoutGridElement;
+    'svg-list-item': HTMLSvgListItemElement;
+    'svg-list': HTMLSvgListElement;
+    'svg-menu-item': HTMLSvgMenuItemElement;
+    'svg-menu': HTMLSvgMenuElement;
+    'svg-pagination': HTMLSvgPaginationElement;
+    'svg-panel': HTMLSvgPanelElement;
+    'svg-progress-indicator': HTMLSvgProgressIndicatorElement;
+    'svg-slider': HTMLSvgSliderElement;
+    'svg-sparkline': HTMLSvgSparklineElement;
+    'svg-spinner': HTMLSvgSpinnerElement;
+    'svg-stepper': HTMLSvgStepperElement;
+    'svg-tab-container': HTMLSvgTabContainerElement;
+    'svg-tab': HTMLSvgTabElement;
+    'svg-text-area': HTMLSvgTextAreaElement;
+    'svg-text-box': HTMLSvgTextBoxElement;
+    'svg-time-picker': HTMLSvgTimePickerElement;
+    'svg-timeline': HTMLSvgTimelineElement;
     'svg-toggle': HTMLSvgToggleElement;
+    'svg-toolbar': HTMLSvgToolbarElement;
   }
 
 
