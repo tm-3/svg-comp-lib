@@ -21,8 +21,14 @@ export namespace Components {
   interface SvgBreadcrumbItem {}
   interface SvgBreadcrumbItemAttributes extends StencilHTMLAttributes {}
 
-  interface SvgButton {}
-  interface SvgButtonAttributes extends StencilHTMLAttributes {}
+  interface SvgButton {
+    'buttonText': string;
+    'viewBox': string;
+  }
+  interface SvgButtonAttributes extends StencilHTMLAttributes {
+    'buttonText'?: string;
+    'viewBox'?: string;
+  }
 
   interface SvgCard {}
   interface SvgCardAttributes extends StencilHTMLAttributes {}
@@ -157,14 +163,14 @@ export namespace Components {
     'toggleOrientation': 'horizontal' | 'vertical';
     'toggleSelected': () => void;
     /**
-    * The viewbox of the SVG
+    * The viewbox of the component
     */
     'viewBox': string;
   }
   interface SvgToggleAttributes extends StencilHTMLAttributes {
     'label'?: string;
     'labelPosition'?: 'left' | 'right' | 'top' | 'bottom';
-    'onTOM'?: (event: CustomEvent) => void;
+    'onToggled'?: (event: CustomEvent) => void;
     /**
     * Defaults to true
     */
@@ -179,7 +185,7 @@ export namespace Components {
     'toggleIndicatorUrl'?: string;
     'toggleOrientation'?: 'horizontal' | 'vertical';
     /**
-    * The viewbox of the SVG
+    * The viewbox of the component
     */
     'viewBox'?: string;
   }

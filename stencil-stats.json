@@ -332,7 +332,7 @@
             "dist/svg/svg-button.entry.js",
             "www/build/svg/svg-button.entry.js"
           ],
-          "size": 304,
+          "size": 1064,
           "target": "es2017"
         }
       ],
@@ -1358,7 +1358,7 @@
             "dist/svg/svg-toggle.entry.js",
             "www/build/svg/svg-toggle.entry.js"
           ],
-          "size": 5122,
+          "size": 4699,
           "target": "es2017"
         }
       ],
@@ -2306,7 +2306,6 @@
     "src/components/svg-timeline/svg-timeline.tsx": [],
     "src/components/svg-toggle/svg-toggle.tsx": [],
     "src/components/svg-toolbar/svg-toolbar.tsx": [],
-    "src/filters/blur.ts": [],
     "src/globals/app.ts": [],
     "src/utils/utils.spec.ts": [
       "src/utils/utils"

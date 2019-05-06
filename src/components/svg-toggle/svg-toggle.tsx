@@ -33,21 +33,21 @@ export class SvgToggle {
   toggleIndicatorUrl: string;
 
   /**
-   * The viewbox of the SVG
+   * The viewbox of the component
    */
   @Prop() viewBox: string = '0 0 200 100';
 
   @Watch('isSelected') stateHandler() {
+    // console.log(someUrl);
+
     if (this.isSelected) {
       this.toggleIndicator.classList.add('svg-toggle-selected-state');
-
-      console.log(this.toggleIndicator.attributes);
     } else {
       this.toggleIndicator.classList.remove('svg-toggle-selected-state');
     }
   }
 
-  @Event({ eventName: 'TOM' }) toggled: EventEmitter;
+  @Event() toggled: EventEmitter;
 
   @Method()
   toggleSelected() {
@@ -92,7 +92,7 @@ export class SvgToggle {
             href={
               this.toggleContainerUrl
                 ? this.toggleContainerUrl
-                : 'assets/baseDefs.svg#toggleContainer'
+                : 'assets/ComponentDefs.svg#svg-toggle-container'
             }
             class="svg-toggle-container"
           />
@@ -103,7 +103,7 @@ export class SvgToggle {
             href={
               this.toggleIndicatorUrl
                 ? this.toggleIndicatorUrl
-                : 'assets/baseDefs.svg#toggleIndicator'
+                : 'assets/ComponentDefs.svg#svg-toggle-indicator'
             }
             class="svg-toggle-indicator"
           />

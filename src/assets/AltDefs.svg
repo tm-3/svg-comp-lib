@@ -1,0 +1,19 @@
+<?xml version='1.0' standalone='no'?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN'
+  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg
+xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <g id="svg-toggle">
+      <rect id="svg-toggle-container" fill="orange" height="100" width="200"  />
+      <circle id="svg-toggle-indicator" r="45" cx="50" cy="50" />
+    </g>
+    <g id="svg-button">
+      <rect id="svg-button-container" width="75" height="50" />
+      
+    </g>
+    <g>
+      
+    </g>
+  </defs>
+</svg> 

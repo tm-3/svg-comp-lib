@@ -27,8 +27,10 @@
   --color-tertiary-3: #343e39;
   --color-tertiary-4: #111111;
 
-  --font-family-primary: '';
+  --font-family-primary: 'Courier New', Courier, monospace;
   --font-family-secondary: '';
   --font-color-primary: '';
   --font-color-secondary: '';
+
+  font-family: var(--font-family-primary);
 }

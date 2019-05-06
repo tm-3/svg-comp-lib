@@ -2,7 +2,7 @@
 
 - all components emit events whenever their state changes
 - all components have an enabled, visible, and none display state
-- elements within components can be replaced by replacing their SVG definitions
+- elements within components can be replaced by replacing their SVG definitions. This can be done globally by using the actual name
 - all components observe their app-container's state and watch for changes. (Need a better name for app-container)
 - Events should emit:
   - ID (all do by default)

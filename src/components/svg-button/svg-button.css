@@ -1,3 +1,18 @@
-:host {
-    /* Component styles go here */
+svg-button {
+  height: var(--svg-button-height, 50px);
+}
+
+.svg-button-normal {
+  fill: var(--color-primary);
+  height: 50px;
+  stroke-width: 2px;
+  /* stroke: black; */
+  transition: 0.3s ease-in-out;
+}
+
+.svg-button-normal:hover {
+  fill: var(--color-secondary);
+}
+
+.svg-button-disabled {
 }
