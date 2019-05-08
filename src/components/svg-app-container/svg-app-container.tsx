@@ -1,11 +1,14 @@
-import { Component, Listen } from '@stencil/core';
+import { Component, Listen, Prop } from '@stencil/core';
 
 @Component({
   tag: 'svg-app-container',
   styleUrl: 'svg-app-container.css',
-  shadow: true,
+  shadow: false,
 })
 export class SvgAppContainer {
+  @Prop({ context: 'store' })
+  totalCount: number = 1;
+
   @Listen('registerComponent')
   handleRegisterComponent() {}
 
@@ -13,12 +16,12 @@ export class SvgAppContainer {
   handleRegisterModel() {}
 
   render() {
-    return (
-      <div>
+    return [
+      <div class="svg-app-container-data">
         <slot name="data" />
-        <slot name="layout" />
-        <slot name="routes" />
-      </div>
-    );
+      </div>,
+      <slot name="layout" />,
+      <slot name="routes" />,
+    ];
   }
 }

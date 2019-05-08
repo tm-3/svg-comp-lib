@@ -12,3 +12,10 @@
 - Validation rules should be applied when state changes
 - user input controls should have a valid/invalid state along with an optional message detailing what is wrong. This should be a state variable and passed in via validation method?
 - Accessibility / Aria values need to be considered.
+
+## specifity
+
+- SVG Definitions take priority over everything
+- CSS classes can be overridden, but not merged
+- Apply CSS classes to <use> elements in component definitions
+- All components should have properties that allow each individual element to be replaced

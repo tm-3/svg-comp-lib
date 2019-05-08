@@ -3,7 +3,7 @@ import { Component, Prop } from '@stencil/core';
 @Component({
   tag: 'svg-button',
   styleUrl: 'svg-button.css',
-  shadow: false,
+  shadow: true,
 })
 export class SvgButton {
   private buttonRoot: SVGElement;
@@ -17,19 +17,36 @@ export class SvgButton {
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
         viewBox={this.viewBox}
-        class="svg-button-normal"
+        preseveAspectRataio="none"
+        width="100%"
+        height="100%"
         ref={(el) => (this.buttonRoot = el as SVGGraphicsElement)}
+        // class="svg-button-container"
       >
-        {/* <defs>
-          <rect id="svg-button-container" width="100" height="50" stroke="black" stroke-width="2" />
-        </defs>
-        <g id="svg-button-container-group">
-          <use href="#svg-button-container" />
-          <text fill="black" x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
+        <defs>
+          <rect
+            id="svg-button-container"
+            width="100%"
+            height="100%"
+            vector-effect="non-scaling-stroke"
+          />
+          <text
+            id="svg-button-text"
+            x="50%"
+            y="50%"
+            dominant-baseline="middle"
+            text-anchor="middle"
+            vector-effect="non-scaling-stroke"
+          >
             {this.buttonText}
           </text>
-        </g> */}
-        <image href="assets/puppy.jpg" />
+          {/** Write a function to programmatically replace the text so this definition can be externalized */}
+          <rect />
+        </defs>
+        <g id="svg-button-container-group">
+          <use href="#svg-button-container" class="svg-button-container" />
+          <use href="#svg-button-text" class="svg-button-text" />
+        </g>
       </svg>
     );
   }

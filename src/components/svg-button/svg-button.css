@@ -1,18 +1,53 @@
 svg-button {
-  height: var(--svg-button-height, 50px);
+  /* width: 100px; */
+  /* width: var(--svg-button-width, 50px);
+  height: var(--svg-button-height, 50px); */
+  /* fill: var(--color-primary); */
+  /* stroke-width: 2px;
+  stroke: var(--color-secondary); */
+  /* transition: 0.3s ease-in-out; */
 }
 
-.svg-button-normal {
+:host {
+}
+
+:host:hover {
+  fill: red;
+}
+
+svg-button:hover {
+  fill: red;
+}
+
+.svg-button-container {
+  /* width: var(--svg-button-width, 50px);
+  height: var(--svg-button-height, 50px); */
   fill: var(--color-primary);
-  height: 50px;
-  stroke-width: 2px;
-  /* stroke: black; */
+  /* stroke-width: 2px; */
+  /* stroke: var(--color-secondary); */
+  /* stroke: white; */
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
-.svg-button-normal:hover {
+.svg-button-container:hover {
+  fill: green;
+}
+
+.svg-button-text {
+  fill: var(--font-color-primary);
+  /* stroke: blue; */
+  cursor: pointer;
+}
+
+.svg-button-text:hover ~ #svg-button-container {
+  fill: green;
+}
+/* 
+svg-button .svg-button-container:hover {
   fill: var(--color-secondary);
-}
+} */
 
+/* 
 .svg-button-disabled {
-}
+} */

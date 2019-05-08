@@ -29,8 +29,8 @@
 
   --font-family-primary: 'Courier New', Courier, monospace;
   --font-family-secondary: '';
-  --font-color-primary: '';
-  --font-color-secondary: '';
+  --font-color-primary: white;
+  --font-color-secondary: black;
 
   font-family: var(--font-family-primary);
 }

@@ -9,7 +9,6 @@
     <title>SVG Component Library</title>
     <script src="/build/svg.js"></script>
     <link rel="stylesheet" type="text/css" href="build/svg.css">
-  </script>
 
     <style>
       .svg-toggle-indicator {
@@ -24,13 +23,9 @@
         --svg-toggle-indicator-color: rgb(221, 213, 203);
         --svg-toggle-container-color: rgb(14, 14, 41);
         --svg-toggle-indicator-selected-color: red;
-        filter: url('assets/baseDefs.svg#red-glow');
+        /* filter: url('assets/baseDefs.svg#red-glow'); */
       }
-
-      .svg-defs {
-        display: none;
-      }
-
+      
       .svg-defs {
         display: none;
       }
@@ -38,8 +33,8 @@
       .wrapper {
         background-color: darkgrey;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 4fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
         align-content: center;
         align-items: center;
         justify-content: center;
@@ -47,6 +42,12 @@
         height: 95vh;
         display: grid;
       }
+
+      .base-settings {
+        /* width: 100px;
+        height: 150px; */
+      }
+
 
       .web-console {
         border: 1px solid #ccc;
@@ -57,28 +58,33 @@
   <body>
     <svg class="svg-defs">
       <defs>
-        <rect height="100" width="300" fill="green" id="svg-toggle-container" />
+        <!-- <rect height="100" width="300" fill="green" id="svg-button-container" /> -->
         <rect height="100" width="200" fill="green" id="altToggleContainer" />
         <rect height="90" width="90" x="5" y="5" id="altToggleIndicator" />
+        <!-- <circle id="svg-button-text" r="50"></circle> -->
+        <symbol id="starIndicator" viewBox="0 0 100 100">
         <path
           d="M64.68 33.77L97.5 38.79L73.75 63.13L79.36 97.5L50 81.27L20.64 97.5L26.25 63.13L2.5 38.79L35.32 33.77L50 2.5L64.68 33.77Z"
-          id="starIndicator"
-          transform="scale(.7) translate(5 15)"
+          
+          stroke="red"
+          x="0" y="50%"
         ></path>
+
+        </symbol>
+        <circle id="svg-button-container" cx="50" cy="50" r="50"></circle>
       </defs>
     </svg>
+    <svg-app-container>
 
-    <div class="wrapper">
-      <!-- <svg-toggle
-        class="toggle"
-        id="3"
-        toggle-indicator-url="#altToggleIndicator"
-        toggle-container-url="#altToggleContainer"
-      ></svg-toggle> -->
-      <svg-button button-text="button"><h1>HI</h1></svg-button>
-      <!--
-      <svg-toggle class="toggle" id="2" toggle-container-url="assets/AltDefs.svg#svg-toggle-container" toggle-indicator-url="#starIndicator"></svg-toggle>
-      <svg-toggle id="33"></svg-toggle> -->
+    <div class="wrapper" slot="layout">
+      <svg-button button-text="CLICK" view-box="0 0 100 50"></svg-button>
+      <svg-button id="btn" button-text="OTHER" view-box="0 0 200 100"></svg-button>
+
     </div>
+<!--     
+      <svg-button slot="data" button-text="data"></svg-button>
+      <svg-button slot="layout" button-text="layout"></svg-button> -->
+    </svg-app-container>
+
   </body>
 </html>
