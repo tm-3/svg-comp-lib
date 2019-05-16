@@ -23,10 +23,12 @@ export namespace Components {
 
   interface SvgButton {
     'buttonText': string;
+    'disabled': boolean;
     'viewBox': string;
   }
   interface SvgButtonAttributes extends StencilHTMLAttributes {
     'buttonText'?: string;
+    'disabled'?: boolean;
     'viewBox'?: string;
   }
 

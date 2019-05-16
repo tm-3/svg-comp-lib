@@ -1,14 +1,11 @@
-import { Component, Listen, Prop } from '@stencil/core';
+import { Component, Listen, Prop, Method } from '@stencil/core';
 
 @Component({
   tag: 'svg-app-container',
   styleUrl: 'svg-app-container.css',
-  shadow: false,
+  shadow: true,
 })
 export class SvgAppContainer {
-  @Prop({ context: 'store' })
-  totalCount: number = 1;
-
   @Listen('registerComponent')
   handleRegisterComponent() {}
 

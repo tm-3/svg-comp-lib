@@ -7,20 +7,23 @@
   "unpkg": "dist/ionic.js",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "build": "stencil build --docs",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec",
-    "test.watch": "stencil test --spec --watchAll"
+    "test.watch": "stencil test --spec --watchAll",
+    "update": "npx npm-check-updates -u && npm install --ignore-scripts"
   },
   "dependencies": {},
   "devDependencies": {
-    "@stencil/core": "~0.16.2",
-    "@types/jest": "^24.0.11",
-    "@types/node": "^11.13.10",
+    "@stencil/core": "~0.18.1",
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.1",
     "mobx": "^5.9.4",
-    "puppeteer": "^1.15.0"
+    "puppeteer": "^1.16.0"
   },
   "peerDependencies": {
     "mobx": "^5.9.4"

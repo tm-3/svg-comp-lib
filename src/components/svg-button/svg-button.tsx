@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop, Element } from '@stencil/core';
 
 @Component({
   tag: 'svg-button',
@@ -7,45 +7,48 @@ import { Component, Prop } from '@stencil/core';
 })
 export class SvgButton {
   private buttonRoot: SVGElement;
+  private buttonTextElement: SVGGraphicsElement;
+  private defUrl: string = '/assets/ComponentDefs.svg';
 
+  @Element() rootElement: HTMLElement;
   @Prop() viewBox: string = '0 0 100 50';
   @Prop() buttonText: string;
+  @Prop() disabled: boolean = true;
+
+  componentWillLoad() {
+    console.log(this.rootElement.dataset.definitionsUrl);
+  }
+  componentDidLoad() {}
 
   render() {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        version="1.1"
         viewBox={this.viewBox}
         preseveAspectRataio="none"
-        width="100%"
-        height="100%"
         ref={(el) => (this.buttonRoot = el as SVGGraphicsElement)}
-        // class="svg-button-container"
+        class="svg-button-host"
       >
         <defs>
-          <rect
-            id="svg-button-container"
-            width="100%"
-            height="100%"
-            vector-effect="non-scaling-stroke"
-          />
           <text
             id="svg-button-text"
-            x="50%"
-            y="50%"
-            dominant-baseline="middle"
+            // font-size="10"
+            // dominant-baseline="middle"
             text-anchor="middle"
             vector-effect="non-scaling-stroke"
+            x="50%"
+            y="50%"
           >
             {this.buttonText}
           </text>
-          {/** Write a function to programmatically replace the text so this definition can be externalized */}
-          <rect />
         </defs>
         <g id="svg-button-container-group">
-          <use href="#svg-button-container" class="svg-button-container" />
-          <use href="#svg-button-text" class="svg-button-text" />
+          <use href={this.defUrl + '#svg-button-container'} class="svg-button-container" />
+          <use
+            ref={(el) => (this.buttonTextElement = el as SVGGraphicsElement)}
+            href="#svg-button-text"
+            class="svg-button-text"
+          />
         </g>
       </svg>
     );

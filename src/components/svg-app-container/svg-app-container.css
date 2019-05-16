@@ -4,3 +4,8 @@ svg-app-container {
 .svg-app-container-data {
   display: none;
 }
+
+.svg-app-contianer-layout {
+  width: 100%;
+  height: 100%;
+}

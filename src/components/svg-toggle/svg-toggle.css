@@ -35,3 +35,7 @@ svg-toggle {
   /* fill: var(--svg-toggle-indicator-selected-color, grey); */
   fill: red;
 }
+
+.svg-toggle > * {
+  visibility: hidden;
+}

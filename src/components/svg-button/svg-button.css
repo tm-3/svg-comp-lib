@@ -1,53 +1,58 @@
-svg-button {
-  /* width: 100px; */
-  /* width: var(--svg-button-width, 50px);
-  height: var(--svg-button-height, 50px); */
-  /* fill: var(--color-primary); */
-  /* stroke-width: 2px;
-  stroke: var(--color-secondary); */
-  /* transition: 0.3s ease-in-out; */
-}
-
 :host {
+  /** 
+   * @prop --svg-button-background-color: 
+   * @prop --svg-button-background-hover-color:
+   * @prop --svg-button-text-color:
+   * @prop --svg-button-text-hover-color:
+   * @prop --svg-button-width:
+   * @prop --svg-button-height:
+   */
+
+  --svg-button-background-color: var(--color-primary);
+  --svg-button-background-hover-color: var(--color-secondary);
+
+  --svg-button-text-color: var(--font-color-primary);
+  --svg-button-text-hover-color: var(--font-color-secondary);
 }
 
-:host:hover {
-  fill: red;
+:host(:disabled) .svg-button-container {
+  background-color: red;
 }
 
-svg-button:hover {
-  fill: red;
+:host(:hover) .svg-button-container {
+  fill: var(--svg-button-background-hover-color);
+}
+
+:host(:hover) .svg-button-text {
+  fill: var(--svg-button-text-hover-color);
+}
+
+:host * {
+  transition: 0.2s ease-in-out;
+}
+
+.svg-button-host {
+  fill: none;
+  width: var(--svg-button-width, 100px);
+  height: var(--svg-button-height, 50px);
+}
+
+.svg-button-host:active .svg-button-text {
+}
+
+.svg-button-host:active .svg-button-container {
 }
 
 .svg-button-container {
-  /* width: var(--svg-button-width, 50px);
-  height: var(--svg-button-height, 50px); */
-  fill: var(--color-primary);
-  /* stroke-width: 2px; */
-  /* stroke: var(--color-secondary); */
-  /* stroke: white; */
-  transition: 0.3s ease-in-out;
+  fill: var(--svg-button-background-color);
   cursor: pointer;
-}
-
-.svg-button-container:hover {
-  fill: green;
 }
 
 .svg-button-text {
-  fill: var(--font-color-primary);
-  /* stroke: blue; */
+  fill: var(--svg-button-text-color);
+  /* transition: 0.2s ease-in-out; */
   cursor: pointer;
+  user-select: none;
+  font-size: var(--font-size, 2em);
+  dominant-baseline: middle;
 }
-
-.svg-button-text:hover ~ #svg-button-container {
-  fill: green;
-}
-/* 
-svg-button .svg-button-container:hover {
-  fill: var(--color-secondary);
-} */
-
-/* 
-.svg-button-disabled {
-} */

@@ -9,6 +9,7 @@
     <title>SVG Component Library</title>
     <script src="/build/svg.js"></script>
     <link rel="stylesheet" type="text/css" href="build/svg.css">
+    <link rel="preload" as="image"  href="/assets/ComponentDefs.svg">
 
     <style>
       .svg-toggle-indicator {
@@ -19,12 +20,23 @@
 
       .toggle {
         /* --svg-toggle-indicator-filter: url('#white-glow'); */
-        --svg-height: 50px;
+        --svg-height: 150px;
         --svg-toggle-indicator-color: rgb(221, 213, 203);
         --svg-toggle-container-color: rgb(14, 14, 41);
-        --svg-toggle-indicator-selected-color: red;
+        /* --svg-toggle-indicator-selected-color: red; */
         /* filter: url('assets/baseDefs.svg#red-glow'); */
+        /* --svg-button-background: red; */
       }
+
+      .svg-button-text {
+        fill: red;
+        transform: translate(10px, 10px)
+      }
+
+
+      /* svg text {
+        font-size: 30px;
+      } */
       
       .svg-defs {
         display: none;
@@ -49,6 +61,14 @@
       }
 
 
+
+      #btn { 
+        filter: url('/assets/ComponentDefs.svg#flooder');
+        --svg-button-width: 50px;
+      }
+
+
+
       .web-console {
         border: 1px solid #ccc;
         padding: 5px;
@@ -56,6 +76,8 @@
     </style>
   </head>
   <body>
+  <img src="/assets/ComponentDefs.svg" class="svg-defs" />
+    <svg-app-container>
     <svg class="svg-defs">
       <defs>
         <!-- <rect height="100" width="300" fill="green" id="svg-button-container" /> -->
@@ -71,20 +93,36 @@
         ></path>
 
         </symbol>
-        <circle id="svg-button-container" cx="50" cy="50" r="50"></circle>
+
+        <rect
+            id="svg-button-container"
+            vector-effect="non-scaling-stroke"
+            width="100%"
+            height="100%" 
+          />
+          
+<filter id="flooder" x="0" y="0" width="100%" height="100%">
+        <feFlood flood-color="#EB0066" flood-opacity=".9"></feFlood>
+    </filter>
       </defs>
+      
+<filter id="flooder" x="0" y="0" width="100%" height="100%">
+        <feFlood flood-color="#EB0066" flood-opacity=".9"></feFlood>
+    </filter>
     </svg>
-    <svg-app-container>
 
     <div class="wrapper" slot="layout">
-      <svg-button button-text="CLICK" view-box="0 0 100 50"></svg-button>
-      <svg-button id="btn" button-text="OTHER" view-box="0 0 200 100"></svg-button>
-
-    </div>
+      
+        <svg-button data-definitions-url="/assets/AltDefs.svg" button-text="CLICK ME"></svg-button>
+        
+        <svg-button id="btn" button-text="secondary" filter="#flooder"></svg-button>
+    </div> 
 <!--     
       <svg-button slot="data" button-text="data"></svg-button>
       <svg-button slot="layout" button-text="layout"></svg-button> -->
+
     </svg-app-container>
+    
 
   </body>
 </html>
